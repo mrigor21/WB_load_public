@@ -1,0 +1,977 @@
+2022-11-14 00:20:42.886 | SUCCESS  | __main__:create_bq_tables_if_needed:535 - c_1 | Все таблицы созданы в BQ
+2022-11-14 00:20:42.887 | INFO     | __main__:main_load:40 - c_1 | Обработка началась
+2022-11-14 00:20:44.211 | INFO     | __main__:clients_first_load:952 - c_1 | Сценарий | Первичная выгрузка: False
+2022-11-14 00:20:44.213 | INFO     | __main__:check_if_tables_must_be_updated:724 - c_1 | Сценарий | Необходима выгрузка реализации из WB: False
+2022-11-14 00:20:44.213 | INFO     | __main__:check_if_tables_must_be_updated:731 - c_1 | Сценарий | Необходима выгрузка склада из WB: True
+2022-11-14 00:20:44.214 | INFO     | __main__:get_actual_part_start_date:968 - c_1 | Начинаем выгрузку с даты: 2022-10-01 00:00:00
+2022-11-14 00:20:48.264 | INFO     | __main__:load_report_from_bq:428 - c_1 | Получение таблицы report из BQ | Выполнено запросов: 1 из 1
+2022-11-14 00:20:48.299 | SUCCESS  | __main__:load_report_from_bq:430 - c_1 | Таблица report получена из BQ
+2022-11-14 00:20:48.300 | INFO     | __main__:load_from_wb:455 - c_1 | Началась загрузка таблицы stocks из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:20:49.252 | SUCCESS  | __main__:load_from_wb:481 - c_1 | Загружена таблица stocks из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:20:49.256 | INFO     | __main__:delete_actual_part_from_bq:514 - c_1 | Началось удаление строк из таблицы stocks | Выполнено запросов: 0 из 1
+2022-11-14 00:20:51.883 | INFO     | __main__:delete_actual_part_from_bq:522 - c_1 | Удаление строк из таблицы stocks | Выполнено запросов: 1 из 1
+2022-11-14 00:20:51.883 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_1 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_1_stocks по id, которые будут заменены новыми данными
+2022-11-14 00:20:55.998 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_1 | Таблица stocks записана в BQ
+2022-11-14 00:20:56.309 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:20:56.310 | INFO     | __main__:load_from_wb:455 - c_1 | Началась загрузка таблицы orders из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:20:57.203 | SUCCESS  | __main__:load_from_wb:481 - c_1 | Загружена таблица orders из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:21:00.212 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_1 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_1_orders начиная с 2022-10-01 00:00:00
+2022-11-14 00:21:04.743 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_1 | Таблица orders записана в BQ
+2022-11-14 00:21:04.957 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:21:04.957 | INFO     | __main__:load_from_wb:455 - c_1 | Началась загрузка таблицы sales из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:21:05.826 | SUCCESS  | __main__:load_from_wb:481 - c_1 | Загружена таблица sales из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:21:08.522 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_1 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_1_sales начиная с 2022-10-01 00:00:00
+2022-11-14 00:21:14.103 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_1 | Таблица sales записана в BQ
+2022-11-14 00:21:14.297 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:21:14.298 | INFO     | __main__:make_main_table:184 - c_1 | Началось формирование таблицы main
+2022-11-14 00:21:14.315 | DEBUG    | __main__:make_main_table:198 - MAIN LENGTH BEGINNING: 142
+2022-11-14 00:21:14.531 | DEBUG    | __main__:make_main_table:377 - MAIN LENGTH ENGING: 142
+2022-11-14 00:21:14.532 | SUCCESS  | __main__:make_main_table:381 - c_1 | Таблица main сформирована
+2022-11-14 00:21:14.533 | INFO     | __main__:delete_actual_part_from_bq:514 - c_1 | Началось удаление строк из таблицы main | Выполнено запросов: 0 из 1
+2022-11-14 00:21:17.467 | INFO     | __main__:delete_actual_part_from_bq:522 - c_1 | Удаление строк из таблицы main | Выполнено запросов: 1 из 1
+2022-11-14 00:21:17.467 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_1 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_1_main по id, которые будут заменены новыми данными
+2022-11-14 00:21:20.587 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_1 | Таблица main записана в BQ
+2022-11-14 00:21:20.751 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:21:20.752 | SUCCESS  | __main__:main_load:72 - c_1 | Обработка клиента завершилась
+2022-11-14 00:21:21.755 | SUCCESS  | __main__:create_bq_tables_if_needed:535 - c_83 | Все таблицы созданы в BQ
+2022-11-14 00:21:21.755 | INFO     | __main__:main_load:40 - c_83 | Обработка началась
+2022-11-14 00:21:22.759 | INFO     | __main__:clients_first_load:952 - c_83 | Сценарий | Первичная выгрузка: False
+2022-11-14 00:21:22.761 | INFO     | __main__:check_if_tables_must_be_updated:724 - c_83 | Сценарий | Необходима выгрузка реализации из WB: False
+2022-11-14 00:21:22.761 | INFO     | __main__:check_if_tables_must_be_updated:731 - c_83 | Сценарий | Необходима выгрузка склада из WB: True
+2022-11-14 00:21:22.762 | INFO     | __main__:get_actual_part_start_date:968 - c_83 | Начинаем выгрузку с даты: 2022-10-01 00:00:00
+2022-11-14 00:21:26.803 | INFO     | __main__:load_report_from_bq:428 - c_83 | Получение таблицы report из BQ | Выполнено запросов: 1 из 1
+2022-11-14 00:21:26.898 | SUCCESS  | __main__:load_report_from_bq:430 - c_83 | Таблица report получена из BQ
+2022-11-14 00:21:26.898 | INFO     | __main__:load_from_wb:455 - c_83 | Началась загрузка таблицы stocks из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:21:27.567 | SUCCESS  | __main__:load_from_wb:481 - c_83 | Загружена таблица stocks из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:21:27.570 | INFO     | __main__:delete_actual_part_from_bq:514 - c_83 | Началось удаление строк из таблицы stocks | Выполнено запросов: 0 из 1
+2022-11-14 00:21:30.156 | INFO     | __main__:delete_actual_part_from_bq:522 - c_83 | Удаление строк из таблицы stocks | Выполнено запросов: 1 из 1
+2022-11-14 00:21:30.156 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_83 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_83_stocks по id, которые будут заменены новыми данными
+2022-11-14 00:21:34.938 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_83 | Таблица stocks записана в BQ
+2022-11-14 00:21:35.132 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:21:35.133 | INFO     | __main__:load_from_wb:455 - c_83 | Началась загрузка таблицы orders из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:21:36.719 | SUCCESS  | __main__:load_from_wb:481 - c_83 | Загружена таблица orders из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:21:39.294 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_83 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_83_orders начиная с 2022-10-01 00:00:00
+2022-11-14 00:21:46.547 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_83 | Таблица orders записана в BQ
+2022-11-14 00:21:46.743 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:21:46.743 | INFO     | __main__:load_from_wb:455 - c_83 | Началась загрузка таблицы sales из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:21:48.003 | SUCCESS  | __main__:load_from_wb:481 - c_83 | Загружена таблица sales из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:21:50.616 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_83 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_83_sales начиная с 2022-10-01 00:00:00
+2022-11-14 00:21:53.758 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_83 | Таблица sales записана в BQ
+2022-11-14 00:21:53.939 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:21:53.940 | INFO     | __main__:make_main_table:184 - c_83 | Началось формирование таблицы main
+2022-11-14 00:21:53.952 | DEBUG    | __main__:make_main_table:198 - MAIN LENGTH BEGINNING: 1111
+2022-11-14 00:21:54.162 | DEBUG    | __main__:make_main_table:377 - MAIN LENGTH ENGING: 1111
+2022-11-14 00:21:54.163 | SUCCESS  | __main__:make_main_table:381 - c_83 | Таблица main сформирована
+2022-11-14 00:21:54.163 | INFO     | __main__:delete_actual_part_from_bq:514 - c_83 | Началось удаление строк из таблицы main | Выполнено запросов: 0 из 1
+2022-11-14 00:21:57.142 | INFO     | __main__:delete_actual_part_from_bq:522 - c_83 | Удаление строк из таблицы main | Выполнено запросов: 1 из 1
+2022-11-14 00:21:57.142 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_83 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_83_main по id, которые будут заменены новыми данными
+2022-11-14 00:22:03.588 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_83 | Таблица main записана в BQ
+2022-11-14 00:22:03.785 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:22:03.785 | SUCCESS  | __main__:main_load:72 - c_83 | Обработка клиента завершилась
+2022-11-14 00:22:04.755 | SUCCESS  | __main__:create_bq_tables_if_needed:535 - c_7 | Все таблицы созданы в BQ
+2022-11-14 00:22:04.755 | INFO     | __main__:main_load:40 - c_7 | Обработка началась
+2022-11-14 00:22:06.012 | INFO     | __main__:clients_first_load:952 - c_7 | Сценарий | Первичная выгрузка: False
+2022-11-14 00:22:06.014 | INFO     | __main__:check_if_tables_must_be_updated:724 - c_7 | Сценарий | Необходима выгрузка реализации из WB: False
+2022-11-14 00:22:06.014 | INFO     | __main__:check_if_tables_must_be_updated:731 - c_7 | Сценарий | Необходима выгрузка склада из WB: True
+2022-11-14 00:22:06.015 | INFO     | __main__:get_actual_part_start_date:968 - c_7 | Начинаем выгрузку с даты: 2022-10-01 00:00:00
+2022-11-14 00:22:10.157 | INFO     | __main__:load_report_from_bq:428 - c_7 | Получение таблицы report из BQ | Выполнено запросов: 1 из 1
+2022-11-14 00:22:10.381 | SUCCESS  | __main__:load_report_from_bq:430 - c_7 | Таблица report получена из BQ
+2022-11-14 00:22:10.382 | INFO     | __main__:load_from_wb:455 - c_7 | Началась загрузка таблицы stocks из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:22:11.147 | SUCCESS  | __main__:load_from_wb:481 - c_7 | Загружена таблица stocks из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:22:11.152 | INFO     | __main__:delete_actual_part_from_bq:514 - c_7 | Началось удаление строк из таблицы stocks | Выполнено запросов: 0 из 1
+2022-11-14 00:22:14.352 | INFO     | __main__:delete_actual_part_from_bq:522 - c_7 | Удаление строк из таблицы stocks | Выполнено запросов: 1 из 1
+2022-11-14 00:22:14.352 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_7 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_7_stocks по id, которые будут заменены новыми данными
+2022-11-14 00:22:23.980 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_7 | Таблица stocks записана в BQ
+2022-11-14 00:22:24.161 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:22:24.161 | INFO     | __main__:load_from_wb:455 - c_7 | Началась загрузка таблицы orders из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:22:25.947 | SUCCESS  | __main__:load_from_wb:481 - c_7 | Загружена таблица orders из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:22:28.551 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_7 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_7_orders начиная с 2022-10-01 00:00:00
+2022-11-14 00:22:31.496 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_7 | Таблица orders записана в BQ
+2022-11-14 00:22:31.656 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:22:31.658 | INFO     | __main__:load_from_wb:455 - c_7 | Началась загрузка таблицы sales из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:22:33.056 | SUCCESS  | __main__:load_from_wb:481 - c_7 | Загружена таблица sales из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:22:35.665 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_7 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_7_sales начиная с 2022-10-01 00:00:00
+2022-11-14 00:22:42.763 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_7 | Таблица sales записана в BQ
+2022-11-14 00:22:42.908 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:22:42.908 | INFO     | __main__:make_main_table:184 - c_7 | Началось формирование таблицы main
+2022-11-14 00:22:42.925 | DEBUG    | __main__:make_main_table:198 - MAIN LENGTH BEGINNING: 2638
+2022-11-14 00:22:43.200 | DEBUG    | __main__:make_main_table:377 - MAIN LENGTH ENGING: 2638
+2022-11-14 00:22:43.201 | SUCCESS  | __main__:make_main_table:381 - c_7 | Таблица main сформирована
+2022-11-14 00:22:43.202 | INFO     | __main__:delete_actual_part_from_bq:514 - c_7 | Началось удаление строк из таблицы main | Выполнено запросов: 0 из 1
+2022-11-14 00:22:46.495 | INFO     | __main__:delete_actual_part_from_bq:522 - c_7 | Удаление строк из таблицы main | Выполнено запросов: 1 из 1
+2022-11-14 00:22:46.496 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_7 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_7_main по id, которые будут заменены новыми данными
+2022-11-14 00:22:49.809 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_7 | Таблица main записана в BQ
+2022-11-14 00:22:49.994 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:22:49.995 | SUCCESS  | __main__:main_load:72 - c_7 | Обработка клиента завершилась
+2022-11-14 00:22:50.869 | SUCCESS  | __main__:create_bq_tables_if_needed:535 - c_9 | Все таблицы созданы в BQ
+2022-11-14 00:22:50.869 | INFO     | __main__:main_load:40 - c_9 | Обработка началась
+2022-11-14 00:22:51.931 | INFO     | __main__:clients_first_load:952 - c_9 | Сценарий | Первичная выгрузка: False
+2022-11-14 00:22:51.933 | INFO     | __main__:check_if_tables_must_be_updated:724 - c_9 | Сценарий | Необходима выгрузка реализации из WB: False
+2022-11-14 00:22:51.933 | INFO     | __main__:check_if_tables_must_be_updated:731 - c_9 | Сценарий | Необходима выгрузка склада из WB: True
+2022-11-14 00:22:51.934 | INFO     | __main__:get_actual_part_start_date:968 - c_9 | Начинаем выгрузку с даты: 2022-10-01 00:00:00
+2022-11-14 00:22:55.801 | INFO     | __main__:load_report_from_bq:428 - c_9 | Получение таблицы report из BQ | Выполнено запросов: 1 из 1
+2022-11-14 00:22:55.925 | SUCCESS  | __main__:load_report_from_bq:430 - c_9 | Таблица report получена из BQ
+2022-11-14 00:22:55.927 | INFO     | __main__:load_from_wb:455 - c_9 | Началась загрузка таблицы stocks из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:22:56.649 | SUCCESS  | __main__:load_from_wb:481 - c_9 | Загружена таблица stocks из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:22:56.654 | INFO     | __main__:delete_actual_part_from_bq:514 - c_9 | Началось удаление строк из таблицы stocks | Выполнено запросов: 0 из 1
+2022-11-14 00:23:00.334 | INFO     | __main__:delete_actual_part_from_bq:522 - c_9 | Удаление строк из таблицы stocks | Выполнено запросов: 1 из 1
+2022-11-14 00:23:00.334 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_9 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_9_stocks по id, которые будут заменены новыми данными
+2022-11-14 00:23:06.823 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_9 | Таблица stocks записана в BQ
+2022-11-14 00:23:07.006 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:23:07.006 | INFO     | __main__:load_from_wb:455 - c_9 | Началась загрузка таблицы orders из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:23:08.385 | SUCCESS  | __main__:load_from_wb:481 - c_9 | Загружена таблица orders из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:23:10.731 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_9 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_9_orders начиная с 2022-10-01 00:00:00
+2022-11-14 00:23:14.919 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_9 | Таблица orders записана в BQ
+2022-11-14 00:23:15.046 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:23:15.047 | INFO     | __main__:load_from_wb:455 - c_9 | Началась загрузка таблицы sales из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:23:16.628 | SUCCESS  | __main__:load_from_wb:481 - c_9 | Загружена таблица sales из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:23:19.246 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_9 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_9_sales начиная с 2022-10-01 00:00:00
+2022-11-14 00:23:22.257 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_9 | Таблица sales записана в BQ
+2022-11-14 00:23:22.409 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:23:22.410 | INFO     | __main__:make_main_table:184 - c_9 | Началось формирование таблицы main
+2022-11-14 00:23:22.439 | DEBUG    | __main__:make_main_table:198 - MAIN LENGTH BEGINNING: 1383
+2022-11-14 00:23:22.718 | DEBUG    | __main__:make_main_table:377 - MAIN LENGTH ENGING: 1383
+2022-11-14 00:23:22.719 | SUCCESS  | __main__:make_main_table:381 - c_9 | Таблица main сформирована
+2022-11-14 00:23:22.720 | INFO     | __main__:delete_actual_part_from_bq:514 - c_9 | Началось удаление строк из таблицы main | Выполнено запросов: 0 из 1
+2022-11-14 00:23:25.579 | INFO     | __main__:delete_actual_part_from_bq:522 - c_9 | Удаление строк из таблицы main | Выполнено запросов: 1 из 1
+2022-11-14 00:23:25.580 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_9 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_9_main по id, которые будут заменены новыми данными
+2022-11-14 00:23:34.527 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_9 | Таблица main записана в BQ
+2022-11-14 00:23:34.703 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:23:34.704 | SUCCESS  | __main__:main_load:72 - c_9 | Обработка клиента завершилась
+2022-11-14 00:23:35.411 | SUCCESS  | __main__:create_bq_tables_if_needed:535 - c_10 | Все таблицы созданы в BQ
+2022-11-14 00:23:35.412 | INFO     | __main__:main_load:40 - c_10 | Обработка началась
+2022-11-14 00:23:36.237 | INFO     | __main__:clients_first_load:952 - c_10 | Сценарий | Первичная выгрузка: False
+2022-11-14 00:23:36.239 | INFO     | __main__:check_if_tables_must_be_updated:724 - c_10 | Сценарий | Необходима выгрузка реализации из WB: False
+2022-11-14 00:23:36.239 | INFO     | __main__:check_if_tables_must_be_updated:731 - c_10 | Сценарий | Необходима выгрузка склада из WB: True
+2022-11-14 00:23:36.239 | INFO     | __main__:get_actual_part_start_date:968 - c_10 | Начинаем выгрузку с даты: 2022-10-01 00:00:00
+2022-11-14 00:23:39.795 | INFO     | __main__:load_report_from_bq:428 - c_10 | Получение таблицы report из BQ | Выполнено запросов: 1 из 1
+2022-11-14 00:23:39.832 | SUCCESS  | __main__:load_report_from_bq:430 - c_10 | Таблица report получена из BQ
+2022-11-14 00:23:39.833 | INFO     | __main__:load_from_wb:455 - c_10 | Началась загрузка таблицы stocks из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:23:40.593 | SUCCESS  | __main__:load_from_wb:481 - c_10 | Загружена таблица stocks из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:23:40.596 | INFO     | __main__:delete_actual_part_from_bq:514 - c_10 | Началось удаление строк из таблицы stocks | Выполнено запросов: 0 из 1
+2022-11-14 00:23:43.196 | INFO     | __main__:delete_actual_part_from_bq:522 - c_10 | Удаление строк из таблицы stocks | Выполнено запросов: 1 из 1
+2022-11-14 00:23:43.197 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_10 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_10_stocks по id, которые будут заменены новыми данными
+2022-11-14 00:23:47.298 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_10 | Таблица stocks записана в BQ
+2022-11-14 00:23:47.503 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:23:47.503 | INFO     | __main__:load_from_wb:455 - c_10 | Началась загрузка таблицы orders из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:23:48.542 | SUCCESS  | __main__:load_from_wb:481 - c_10 | Загружена таблица orders из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:23:50.886 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_10 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_10_orders начиная с 2022-10-01 00:00:00
+2022-11-14 00:23:54.151 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_10 | Таблица orders записана в BQ
+2022-11-14 00:23:54.282 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:23:54.283 | INFO     | __main__:load_from_wb:455 - c_10 | Началась загрузка таблицы sales из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:23:55.285 | SUCCESS  | __main__:load_from_wb:481 - c_10 | Загружена таблица sales из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:23:57.785 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_10 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_10_sales начиная с 2022-10-01 00:00:00
+2022-11-14 00:24:00.543 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_10 | Таблица sales записана в BQ
+2022-11-14 00:24:00.700 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:24:00.700 | INFO     | __main__:make_main_table:184 - c_10 | Началось формирование таблицы main
+2022-11-14 00:24:00.709 | DEBUG    | __main__:make_main_table:198 - MAIN LENGTH BEGINNING: 196
+2022-11-14 00:24:00.832 | DEBUG    | __main__:make_main_table:377 - MAIN LENGTH ENGING: 196
+2022-11-14 00:24:00.833 | SUCCESS  | __main__:make_main_table:381 - c_10 | Таблица main сформирована
+2022-11-14 00:24:00.833 | INFO     | __main__:delete_actual_part_from_bq:514 - c_10 | Началось удаление строк из таблицы main | Выполнено запросов: 0 из 1
+2022-11-14 00:24:03.405 | INFO     | __main__:delete_actual_part_from_bq:522 - c_10 | Удаление строк из таблицы main | Выполнено запросов: 1 из 1
+2022-11-14 00:24:03.405 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_10 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_10_main по id, которые будут заменены новыми данными
+2022-11-14 00:24:09.024 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_10 | Таблица main записана в BQ
+2022-11-14 00:24:09.218 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:24:09.218 | SUCCESS  | __main__:main_load:72 - c_10 | Обработка клиента завершилась
+2022-11-14 00:24:09.939 | SUCCESS  | __main__:create_bq_tables_if_needed:535 - c_11 | Все таблицы созданы в BQ
+2022-11-14 00:24:09.939 | INFO     | __main__:main_load:40 - c_11 | Обработка началась
+2022-11-14 00:24:10.751 | INFO     | __main__:clients_first_load:952 - c_11 | Сценарий | Первичная выгрузка: False
+2022-11-14 00:24:10.752 | INFO     | __main__:check_if_tables_must_be_updated:724 - c_11 | Сценарий | Необходима выгрузка реализации из WB: False
+2022-11-14 00:24:10.752 | INFO     | __main__:check_if_tables_must_be_updated:731 - c_11 | Сценарий | Необходима выгрузка склада из WB: True
+2022-11-14 00:24:10.752 | INFO     | __main__:get_actual_part_start_date:968 - c_11 | Начинаем выгрузку с даты: 2022-10-01 00:00:00
+2022-11-14 00:24:14.145 | INFO     | __main__:load_report_from_bq:428 - c_11 | Получение таблицы report из BQ | Выполнено запросов: 1 из 1
+2022-11-14 00:24:14.210 | SUCCESS  | __main__:load_report_from_bq:430 - c_11 | Таблица report получена из BQ
+2022-11-14 00:24:14.211 | INFO     | __main__:load_from_wb:455 - c_11 | Началась загрузка таблицы stocks из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:24:15.244 | SUCCESS  | __main__:load_from_wb:481 - c_11 | Загружена таблица stocks из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:24:15.248 | INFO     | __main__:delete_actual_part_from_bq:514 - c_11 | Началось удаление строк из таблицы stocks | Выполнено запросов: 0 из 1
+2022-11-14 00:24:18.007 | INFO     | __main__:delete_actual_part_from_bq:522 - c_11 | Удаление строк из таблицы stocks | Выполнено запросов: 1 из 1
+2022-11-14 00:24:18.008 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_11 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_11_stocks по id, которые будут заменены новыми данными
+2022-11-14 00:24:23.219 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_11 | Таблица stocks записана в BQ
+2022-11-14 00:24:23.373 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:24:23.373 | INFO     | __main__:load_from_wb:455 - c_11 | Началась загрузка таблицы orders из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:24:24.627 | SUCCESS  | __main__:load_from_wb:481 - c_11 | Загружена таблица orders из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:24:26.800 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_11 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_11_orders начиная с 2022-10-01 00:00:00
+2022-11-14 00:24:31.798 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_11 | Таблица orders записана в BQ
+2022-11-14 00:24:31.981 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:24:31.982 | INFO     | __main__:load_from_wb:455 - c_11 | Началась загрузка таблицы sales из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:24:33.261 | SUCCESS  | __main__:load_from_wb:481 - c_11 | Загружена таблица sales из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:24:35.699 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_11 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_11_sales начиная с 2022-10-01 00:00:00
+2022-11-14 00:24:38.987 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_11 | Таблица sales записана в BQ
+2022-11-14 00:24:39.165 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:24:39.165 | INFO     | __main__:make_main_table:184 - c_11 | Началось формирование таблицы main
+2022-11-14 00:24:39.177 | DEBUG    | __main__:make_main_table:198 - MAIN LENGTH BEGINNING: 1145
+2022-11-14 00:24:39.334 | DEBUG    | __main__:make_main_table:377 - MAIN LENGTH ENGING: 1145
+2022-11-14 00:24:39.335 | SUCCESS  | __main__:make_main_table:381 - c_11 | Таблица main сформирована
+2022-11-14 00:24:39.335 | INFO     | __main__:delete_actual_part_from_bq:514 - c_11 | Началось удаление строк из таблицы main | Выполнено запросов: 0 из 1
+2022-11-14 00:24:41.869 | INFO     | __main__:delete_actual_part_from_bq:522 - c_11 | Удаление строк из таблицы main | Выполнено запросов: 1 из 1
+2022-11-14 00:24:41.870 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_11 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_11_main по id, которые будут заменены новыми данными
+2022-11-14 00:24:44.764 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_11 | Таблица main записана в BQ
+2022-11-14 00:24:44.897 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:24:44.897 | SUCCESS  | __main__:main_load:72 - c_11 | Обработка клиента завершилась
+2022-11-14 00:24:45.636 | SUCCESS  | __main__:create_bq_tables_if_needed:535 - c_12 | Все таблицы созданы в BQ
+2022-11-14 00:24:45.636 | INFO     | __main__:main_load:40 - c_12 | Обработка началась
+2022-11-14 00:24:46.585 | INFO     | __main__:clients_first_load:952 - c_12 | Сценарий | Первичная выгрузка: False
+2022-11-14 00:24:46.587 | INFO     | __main__:check_if_tables_must_be_updated:724 - c_12 | Сценарий | Необходима выгрузка реализации из WB: False
+2022-11-14 00:24:46.587 | INFO     | __main__:check_if_tables_must_be_updated:731 - c_12 | Сценарий | Необходима выгрузка склада из WB: True
+2022-11-14 00:24:46.587 | INFO     | __main__:get_actual_part_start_date:968 - c_12 | Начинаем выгрузку с даты: 2022-10-01 00:00:00
+2022-11-14 00:24:51.413 | INFO     | __main__:load_report_from_bq:428 - c_12 | Получение таблицы report из BQ | Выполнено запросов: 1 из 1
+2022-11-14 00:24:52.298 | SUCCESS  | __main__:load_report_from_bq:430 - c_12 | Таблица report получена из BQ
+2022-11-14 00:24:52.302 | INFO     | __main__:load_from_wb:455 - c_12 | Началась загрузка таблицы stocks из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:24:53.602 | SUCCESS  | __main__:load_from_wb:481 - c_12 | Загружена таблица stocks из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:24:53.605 | INFO     | __main__:delete_actual_part_from_bq:514 - c_12 | Началось удаление строк из таблицы stocks | Выполнено запросов: 0 из 1
+2022-11-14 00:24:56.323 | INFO     | __main__:delete_actual_part_from_bq:522 - c_12 | Удаление строк из таблицы stocks | Выполнено запросов: 1 из 1
+2022-11-14 00:24:56.324 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_12 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_12_stocks по id, которые будут заменены новыми данными
+2022-11-14 00:25:03.424 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_12 | Таблица stocks записана в BQ
+2022-11-14 00:25:03.636 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:25:03.637 | INFO     | __main__:load_from_wb:455 - c_12 | Началась загрузка таблицы orders из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:25:09.963 | SUCCESS  | __main__:load_from_wb:481 - c_12 | Загружена таблица orders из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:25:12.684 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_12 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_12_orders начиная с 2022-10-01 00:00:00
+2022-11-14 00:25:17.163 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_12 | Таблица orders записана в BQ
+2022-11-14 00:25:17.322 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:25:17.323 | INFO     | __main__:load_from_wb:455 - c_12 | Началась загрузка таблицы sales из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:25:19.997 | SUCCESS  | __main__:load_from_wb:481 - c_12 | Загружена таблица sales из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:25:22.439 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_12 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_12_sales начиная с 2022-10-01 00:00:00
+2022-11-14 00:25:28.185 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_12 | Таблица sales записана в BQ
+2022-11-14 00:25:28.350 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:25:28.350 | INFO     | __main__:make_main_table:184 - c_12 | Началось формирование таблицы main
+2022-11-14 00:25:28.455 | DEBUG    | __main__:make_main_table:198 - MAIN LENGTH BEGINNING: 20863
+2022-11-14 00:25:30.018 | DEBUG    | __main__:make_main_table:377 - MAIN LENGTH ENGING: 20863
+2022-11-14 00:25:30.018 | SUCCESS  | __main__:make_main_table:381 - c_12 | Таблица main сформирована
+2022-11-14 00:25:30.028 | INFO     | __main__:delete_actual_part_from_bq:514 - c_12 | Началось удаление строк из таблицы main | Выполнено запросов: 0 из 1
+2022-11-14 00:25:36.410 | INFO     | __main__:delete_actual_part_from_bq:522 - c_12 | Удаление строк из таблицы main | Выполнено запросов: 1 из 1
+2022-11-14 00:25:36.410 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_12 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_12_main по id, которые будут заменены новыми данными
+2022-11-14 00:25:46.748 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_12 | Таблица main записана в BQ
+2022-11-14 00:25:47.108 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:25:47.109 | SUCCESS  | __main__:main_load:72 - c_12 | Обработка клиента завершилась
+2022-11-14 00:25:47.800 | SUCCESS  | __main__:create_bq_tables_if_needed:535 - c_13 | Все таблицы созданы в BQ
+2022-11-14 00:25:47.800 | INFO     | __main__:main_load:40 - c_13 | Обработка началась
+2022-11-14 00:25:48.534 | INFO     | __main__:clients_first_load:952 - c_13 | Сценарий | Первичная выгрузка: False
+2022-11-14 00:25:48.535 | INFO     | __main__:check_if_tables_must_be_updated:724 - c_13 | Сценарий | Необходима выгрузка реализации из WB: False
+2022-11-14 00:25:48.536 | INFO     | __main__:check_if_tables_must_be_updated:731 - c_13 | Сценарий | Необходима выгрузка склада из WB: True
+2022-11-14 00:25:48.536 | INFO     | __main__:get_actual_part_start_date:968 - c_13 | Начинаем выгрузку с даты: 2022-10-01 00:00:00
+2022-11-14 00:25:52.197 | INFO     | __main__:load_report_from_bq:428 - c_13 | Получение таблицы report из BQ | Выполнено запросов: 1 из 1
+2022-11-14 00:25:52.347 | SUCCESS  | __main__:load_report_from_bq:430 - c_13 | Таблица report получена из BQ
+2022-11-14 00:25:52.350 | INFO     | __main__:load_from_wb:455 - c_13 | Началась загрузка таблицы stocks из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:25:53.055 | SUCCESS  | __main__:load_from_wb:481 - c_13 | Загружена таблица stocks из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:25:53.059 | INFO     | __main__:delete_actual_part_from_bq:514 - c_13 | Началось удаление строк из таблицы stocks | Выполнено запросов: 0 из 1
+2022-11-14 00:25:55.460 | INFO     | __main__:delete_actual_part_from_bq:522 - c_13 | Удаление строк из таблицы stocks | Выполнено запросов: 1 из 1
+2022-11-14 00:25:55.461 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_13 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_13_stocks по id, которые будут заменены новыми данными
+2022-11-14 00:25:58.620 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_13 | Таблица stocks записана в BQ
+2022-11-14 00:25:58.817 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:25:58.817 | INFO     | __main__:load_from_wb:455 - c_13 | Началась загрузка таблицы orders из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:26:00.195 | SUCCESS  | __main__:load_from_wb:481 - c_13 | Загружена таблица orders из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:26:02.446 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_13 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_13_orders начиная с 2022-10-01 00:00:00
+2022-11-14 00:26:06.731 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_13 | Таблица orders записана в BQ
+2022-11-14 00:26:06.914 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:26:06.930 | INFO     | __main__:load_from_wb:455 - c_13 | Началась загрузка таблицы sales из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:26:08.422 | SUCCESS  | __main__:load_from_wb:481 - c_13 | Загружена таблица sales из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:26:10.862 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_13 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_13_sales начиная с 2022-10-01 00:00:00
+2022-11-14 00:26:14.091 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_13 | Таблица sales записана в BQ
+2022-11-14 00:26:14.239 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:26:14.239 | INFO     | __main__:make_main_table:184 - c_13 | Началось формирование таблицы main
+2022-11-14 00:26:14.254 | DEBUG    | __main__:make_main_table:198 - MAIN LENGTH BEGINNING: 1397
+2022-11-14 00:26:14.461 | DEBUG    | __main__:make_main_table:377 - MAIN LENGTH ENGING: 1397
+2022-11-14 00:26:14.462 | SUCCESS  | __main__:make_main_table:381 - c_13 | Таблица main сформирована
+2022-11-14 00:26:14.463 | INFO     | __main__:delete_actual_part_from_bq:514 - c_13 | Началось удаление строк из таблицы main | Выполнено запросов: 0 из 1
+2022-11-14 00:26:16.956 | INFO     | __main__:delete_actual_part_from_bq:522 - c_13 | Удаление строк из таблицы main | Выполнено запросов: 1 из 1
+2022-11-14 00:26:16.957 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_13 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_13_main по id, которые будут заменены новыми данными
+2022-11-14 00:26:22.635 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_13 | Таблица main записана в BQ
+2022-11-14 00:26:22.798 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:26:22.805 | SUCCESS  | __main__:main_load:72 - c_13 | Обработка клиента завершилась
+2022-11-14 00:26:23.477 | SUCCESS  | __main__:create_bq_tables_if_needed:535 - c_14 | Все таблицы созданы в BQ
+2022-11-14 00:26:23.477 | INFO     | __main__:main_load:40 - c_14 | Обработка началась
+2022-11-14 00:26:24.285 | INFO     | __main__:clients_first_load:952 - c_14 | Сценарий | Первичная выгрузка: False
+2022-11-14 00:26:24.286 | INFO     | __main__:check_if_tables_must_be_updated:724 - c_14 | Сценарий | Необходима выгрузка реализации из WB: False
+2022-11-14 00:26:24.287 | INFO     | __main__:check_if_tables_must_be_updated:731 - c_14 | Сценарий | Необходима выгрузка склада из WB: True
+2022-11-14 00:26:24.287 | INFO     | __main__:get_actual_part_start_date:968 - c_14 | Начинаем выгрузку с даты: 2022-10-01 00:00:00
+2022-11-14 00:26:27.992 | INFO     | __main__:load_report_from_bq:428 - c_14 | Получение таблицы report из BQ | Выполнено запросов: 1 из 1
+2022-11-14 00:26:28.233 | SUCCESS  | __main__:load_report_from_bq:430 - c_14 | Таблица report получена из BQ
+2022-11-14 00:26:28.234 | INFO     | __main__:load_from_wb:455 - c_14 | Началась загрузка таблицы stocks из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:26:28.999 | SUCCESS  | __main__:load_from_wb:481 - c_14 | Загружена таблица stocks из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:26:29.003 | INFO     | __main__:delete_actual_part_from_bq:514 - c_14 | Началось удаление строк из таблицы stocks | Выполнено запросов: 0 из 1
+2022-11-14 00:26:31.136 | INFO     | __main__:delete_actual_part_from_bq:522 - c_14 | Удаление строк из таблицы stocks | Выполнено запросов: 1 из 1
+2022-11-14 00:26:31.136 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_14 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_14_stocks по id, которые будут заменены новыми данными
+2022-11-14 00:26:34.353 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_14 | Таблица stocks записана в BQ
+2022-11-14 00:26:34.571 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:26:34.571 | INFO     | __main__:load_from_wb:455 - c_14 | Началась загрузка таблицы orders из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:26:36.607 | SUCCESS  | __main__:load_from_wb:481 - c_14 | Загружена таблица orders из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:26:39.051 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_14 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_14_orders начиная с 2022-10-01 00:00:00
+2022-11-14 00:26:46.543 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_14 | Таблица orders записана в BQ
+2022-11-14 00:26:46.735 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:26:46.736 | INFO     | __main__:load_from_wb:455 - c_14 | Началась загрузка таблицы sales из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:26:48.351 | SUCCESS  | __main__:load_from_wb:481 - c_14 | Загружена таблица sales из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:26:50.754 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_14 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_14_sales начиная с 2022-10-01 00:00:00
+2022-11-14 00:26:56.043 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_14 | Таблица sales записана в BQ
+2022-11-14 00:26:56.220 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:26:56.221 | INFO     | __main__:make_main_table:184 - c_14 | Началось формирование таблицы main
+2022-11-14 00:26:56.239 | DEBUG    | __main__:make_main_table:198 - MAIN LENGTH BEGINNING: 3491
+2022-11-14 00:26:56.654 | DEBUG    | __main__:make_main_table:377 - MAIN LENGTH ENGING: 3491
+2022-11-14 00:26:56.654 | SUCCESS  | __main__:make_main_table:381 - c_14 | Таблица main сформирована
+2022-11-14 00:26:56.657 | INFO     | __main__:delete_actual_part_from_bq:514 - c_14 | Началось удаление строк из таблицы main | Выполнено запросов: 0 из 1
+2022-11-14 00:26:59.973 | INFO     | __main__:delete_actual_part_from_bq:522 - c_14 | Удаление строк из таблицы main | Выполнено запросов: 1 из 1
+2022-11-14 00:26:59.973 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_14 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_14_main по id, которые будут заменены новыми данными
+2022-11-14 00:27:04.862 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_14 | Таблица main записана в BQ
+2022-11-14 00:27:05.040 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:27:05.041 | SUCCESS  | __main__:main_load:72 - c_14 | Обработка клиента завершилась
+2022-11-14 00:27:05.679 | SUCCESS  | __main__:create_bq_tables_if_needed:535 - c_56 | Все таблицы созданы в BQ
+2022-11-14 00:27:05.679 | INFO     | __main__:main_load:40 - c_56 | Обработка началась
+2022-11-14 00:27:06.498 | INFO     | __main__:clients_first_load:952 - c_56 | Сценарий | Первичная выгрузка: False
+2022-11-14 00:27:06.499 | INFO     | __main__:check_if_tables_must_be_updated:724 - c_56 | Сценарий | Необходима выгрузка реализации из WB: False
+2022-11-14 00:27:06.500 | INFO     | __main__:check_if_tables_must_be_updated:731 - c_56 | Сценарий | Необходима выгрузка склада из WB: True
+2022-11-14 00:27:06.500 | INFO     | __main__:get_actual_part_start_date:968 - c_56 | Начинаем выгрузку с даты: 2022-10-01 00:00:00
+2022-11-14 00:27:09.792 | INFO     | __main__:load_report_from_bq:428 - c_56 | Получение таблицы report из BQ | Выполнено запросов: 1 из 1
+2022-11-14 00:27:09.852 | SUCCESS  | __main__:load_report_from_bq:430 - c_56 | Таблица report получена из BQ
+2022-11-14 00:27:09.853 | INFO     | __main__:load_from_wb:455 - c_56 | Началась загрузка таблицы stocks из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:27:10.615 | SUCCESS  | __main__:load_from_wb:481 - c_56 | Загружена таблица stocks из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:27:10.619 | INFO     | __main__:delete_actual_part_from_bq:514 - c_56 | Началось удаление строк из таблицы stocks | Выполнено запросов: 0 из 1
+2022-11-14 00:27:12.721 | INFO     | __main__:delete_actual_part_from_bq:522 - c_56 | Удаление строк из таблицы stocks | Выполнено запросов: 1 из 1
+2022-11-14 00:27:12.722 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_56 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_56_stocks по id, которые будут заменены новыми данными
+2022-11-14 00:27:15.952 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_56 | Таблица stocks записана в BQ
+2022-11-14 00:27:16.097 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:27:16.098 | INFO     | __main__:load_from_wb:455 - c_56 | Началась загрузка таблицы orders из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:27:17.055 | SUCCESS  | __main__:load_from_wb:481 - c_56 | Загружена таблица orders из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:27:19.560 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_56 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_56_orders начиная с 2022-10-01 00:00:00
+2022-11-14 00:27:25.927 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_56 | Таблица orders записана в BQ
+2022-11-14 00:27:26.126 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:27:26.128 | INFO     | __main__:load_from_wb:455 - c_56 | Началась загрузка таблицы sales из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:27:27.114 | SUCCESS  | __main__:load_from_wb:481 - c_56 | Загружена таблица sales из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:27:29.254 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_56 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_56_sales начиная с 2022-10-01 00:00:00
+2022-11-14 00:27:32.523 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_56 | Таблица sales записана в BQ
+2022-11-14 00:27:32.713 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:27:32.714 | INFO     | __main__:make_main_table:184 - c_56 | Началось формирование таблицы main
+2022-11-14 00:27:32.730 | DEBUG    | __main__:make_main_table:198 - MAIN LENGTH BEGINNING: 162
+2022-11-14 00:27:32.844 | DEBUG    | __main__:make_main_table:377 - MAIN LENGTH ENGING: 162
+2022-11-14 00:27:32.844 | SUCCESS  | __main__:make_main_table:381 - c_56 | Таблица main сформирована
+2022-11-14 00:27:32.845 | INFO     | __main__:delete_actual_part_from_bq:514 - c_56 | Началось удаление строк из таблицы main | Выполнено запросов: 0 из 1
+2022-11-14 00:27:35.012 | INFO     | __main__:delete_actual_part_from_bq:522 - c_56 | Удаление строк из таблицы main | Выполнено запросов: 1 из 1
+2022-11-14 00:27:35.012 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_56 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_56_main по id, которые будут заменены новыми данными
+2022-11-14 00:27:41.123 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_56 | Таблица main записана в BQ
+2022-11-14 00:27:41.270 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:27:41.271 | SUCCESS  | __main__:main_load:72 - c_56 | Обработка клиента завершилась
+2022-11-14 00:27:42.040 | SUCCESS  | __main__:create_bq_tables_if_needed:535 - c_17 | Все таблицы созданы в BQ
+2022-11-14 00:27:42.040 | INFO     | __main__:main_load:40 - c_17 | Обработка началась
+2022-11-14 00:27:42.825 | INFO     | __main__:clients_first_load:952 - c_17 | Сценарий | Первичная выгрузка: False
+2022-11-14 00:27:42.826 | INFO     | __main__:check_if_tables_must_be_updated:724 - c_17 | Сценарий | Необходима выгрузка реализации из WB: False
+2022-11-14 00:27:42.827 | INFO     | __main__:check_if_tables_must_be_updated:731 - c_17 | Сценарий | Необходима выгрузка склада из WB: True
+2022-11-14 00:27:42.827 | INFO     | __main__:get_actual_part_start_date:968 - c_17 | Начинаем выгрузку с даты: 2022-10-01 00:00:00
+2022-11-14 00:27:46.320 | INFO     | __main__:load_report_from_bq:428 - c_17 | Получение таблицы report из BQ | Выполнено запросов: 1 из 1
+2022-11-14 00:27:46.402 | SUCCESS  | __main__:load_report_from_bq:430 - c_17 | Таблица report получена из BQ
+2022-11-14 00:27:46.403 | INFO     | __main__:load_from_wb:455 - c_17 | Началась загрузка таблицы stocks из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:27:47.254 | SUCCESS  | __main__:load_from_wb:481 - c_17 | Загружена таблица stocks из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:27:47.256 | INFO     | __main__:delete_actual_part_from_bq:514 - c_17 | Началось удаление строк из таблицы stocks | Выполнено запросов: 0 из 1
+2022-11-14 00:27:50.344 | INFO     | __main__:delete_actual_part_from_bq:522 - c_17 | Удаление строк из таблицы stocks | Выполнено запросов: 1 из 1
+2022-11-14 00:27:50.344 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_17 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_17_stocks по id, которые будут заменены новыми данными
+2022-11-14 00:27:53.116 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_17 | Таблица stocks записана в BQ
+2022-11-14 00:27:53.287 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:27:53.288 | INFO     | __main__:load_from_wb:455 - c_17 | Началась загрузка таблицы orders из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:27:54.667 | SUCCESS  | __main__:load_from_wb:481 - c_17 | Загружена таблица orders из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:27:57.103 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_17 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_17_orders начиная с 2022-10-01 00:00:00
+2022-11-14 00:28:01.889 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_17 | Таблица orders записана в BQ
+2022-11-14 00:28:02.035 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:28:02.036 | INFO     | __main__:load_from_wb:455 - c_17 | Началась загрузка таблицы sales из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:28:03.407 | SUCCESS  | __main__:load_from_wb:481 - c_17 | Загружена таблица sales из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:28:05.885 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_17 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_17_sales начиная с 2022-10-01 00:00:00
+2022-11-14 00:28:11.596 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_17 | Таблица sales записана в BQ
+2022-11-14 00:28:11.769 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:28:11.769 | INFO     | __main__:make_main_table:184 - c_17 | Началось формирование таблицы main
+2022-11-14 00:28:11.780 | DEBUG    | __main__:make_main_table:198 - MAIN LENGTH BEGINNING: 691
+2022-11-14 00:28:11.909 | DEBUG    | __main__:make_main_table:377 - MAIN LENGTH ENGING: 691
+2022-11-14 00:28:11.910 | SUCCESS  | __main__:make_main_table:381 - c_17 | Таблица main сформирована
+2022-11-14 00:28:11.911 | INFO     | __main__:delete_actual_part_from_bq:514 - c_17 | Началось удаление строк из таблицы main | Выполнено запросов: 0 из 1
+2022-11-14 00:28:14.393 | INFO     | __main__:delete_actual_part_from_bq:522 - c_17 | Удаление строк из таблицы main | Выполнено запросов: 1 из 1
+2022-11-14 00:28:14.393 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_17 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_17_main по id, которые будут заменены новыми данными
+2022-11-14 00:28:19.381 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_17 | Таблица main записана в BQ
+2022-11-14 00:28:19.573 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:28:19.574 | SUCCESS  | __main__:main_load:72 - c_17 | Обработка клиента завершилась
+2022-11-14 00:28:20.264 | SUCCESS  | __main__:create_bq_tables_if_needed:535 - c_28 | Все таблицы созданы в BQ
+2022-11-14 00:28:20.265 | INFO     | __main__:main_load:40 - c_28 | Обработка началась
+2022-11-14 00:28:21.088 | INFO     | __main__:clients_first_load:952 - c_28 | Сценарий | Первичная выгрузка: False
+2022-11-14 00:28:21.089 | INFO     | __main__:check_if_tables_must_be_updated:724 - c_28 | Сценарий | Необходима выгрузка реализации из WB: False
+2022-11-14 00:28:21.089 | INFO     | __main__:check_if_tables_must_be_updated:731 - c_28 | Сценарий | Необходима выгрузка склада из WB: True
+2022-11-14 00:28:21.089 | INFO     | __main__:get_actual_part_start_date:968 - c_28 | Начинаем выгрузку с даты: 2022-10-01 00:00:00
+2022-11-14 00:28:24.421 | INFO     | __main__:load_report_from_bq:428 - c_28 | Получение таблицы report из BQ | Выполнено запросов: 1 из 1
+2022-11-14 00:28:24.492 | SUCCESS  | __main__:load_report_from_bq:430 - c_28 | Таблица report получена из BQ
+2022-11-14 00:28:24.492 | INFO     | __main__:load_from_wb:455 - c_28 | Началась загрузка таблицы stocks из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:28:25.412 | SUCCESS  | __main__:load_from_wb:481 - c_28 | Загружена таблица stocks из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:28:25.417 | INFO     | __main__:delete_actual_part_from_bq:514 - c_28 | Началось удаление строк из таблицы stocks | Выполнено запросов: 0 из 1
+2022-11-14 00:28:28.475 | INFO     | __main__:delete_actual_part_from_bq:522 - c_28 | Удаление строк из таблицы stocks | Выполнено запросов: 1 из 1
+2022-11-14 00:28:28.475 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_28 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_28_stocks по id, которые будут заменены новыми данными
+2022-11-14 00:28:31.167 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_28 | Таблица stocks записана в BQ
+2022-11-14 00:28:31.357 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:28:31.358 | INFO     | __main__:load_from_wb:455 - c_28 | Началась загрузка таблицы orders из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:28:32.883 | SUCCESS  | __main__:load_from_wb:481 - c_28 | Загружена таблица orders из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:28:35.642 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_28 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_28_orders начиная с 2022-10-01 00:00:00
+2022-11-14 00:28:38.796 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_28 | Таблица orders записана в BQ
+2022-11-14 00:28:38.940 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:28:38.941 | INFO     | __main__:load_from_wb:455 - c_28 | Началась загрузка таблицы sales из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:28:40.129 | SUCCESS  | __main__:load_from_wb:481 - c_28 | Загружена таблица sales из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:28:42.329 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_28 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_28_sales начиная с 2022-10-01 00:00:00
+2022-11-14 00:28:45.384 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_28 | Таблица sales записана в BQ
+2022-11-14 00:28:45.618 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:28:45.619 | INFO     | __main__:make_main_table:184 - c_28 | Началось формирование таблицы main
+2022-11-14 00:28:45.639 | DEBUG    | __main__:make_main_table:198 - MAIN LENGTH BEGINNING: 754
+2022-11-14 00:28:45.803 | DEBUG    | __main__:make_main_table:377 - MAIN LENGTH ENGING: 754
+2022-11-14 00:28:45.803 | SUCCESS  | __main__:make_main_table:381 - c_28 | Таблица main сформирована
+2022-11-14 00:28:45.804 | INFO     | __main__:delete_actual_part_from_bq:514 - c_28 | Началось удаление строк из таблицы main | Выполнено запросов: 0 из 1
+2022-11-14 00:28:48.219 | INFO     | __main__:delete_actual_part_from_bq:522 - c_28 | Удаление строк из таблицы main | Выполнено запросов: 1 из 1
+2022-11-14 00:28:48.220 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_28 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_28_main по id, которые будут заменены новыми данными
+2022-11-14 00:28:52.403 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_28 | Таблица main записана в BQ
+2022-11-14 00:28:52.554 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:28:52.555 | SUCCESS  | __main__:main_load:72 - c_28 | Обработка клиента завершилась
+2022-11-14 00:28:53.197 | SUCCESS  | __main__:create_bq_tables_if_needed:535 - c_31 | Все таблицы созданы в BQ
+2022-11-14 00:28:53.198 | INFO     | __main__:main_load:40 - c_31 | Обработка началась
+2022-11-14 00:28:53.954 | INFO     | __main__:clients_first_load:952 - c_31 | Сценарий | Первичная выгрузка: False
+2022-11-14 00:28:53.956 | INFO     | __main__:check_if_tables_must_be_updated:724 - c_31 | Сценарий | Необходима выгрузка реализации из WB: False
+2022-11-14 00:28:53.957 | INFO     | __main__:check_if_tables_must_be_updated:731 - c_31 | Сценарий | Необходима выгрузка склада из WB: True
+2022-11-14 00:28:53.957 | INFO     | __main__:get_actual_part_start_date:968 - c_31 | Начинаем выгрузку с даты: 2022-10-01 00:00:00
+2022-11-14 00:28:57.534 | INFO     | __main__:load_report_from_bq:428 - c_31 | Получение таблицы report из BQ | Выполнено запросов: 1 из 1
+2022-11-14 00:28:57.718 | SUCCESS  | __main__:load_report_from_bq:430 - c_31 | Таблица report получена из BQ
+2022-11-14 00:28:57.719 | INFO     | __main__:load_from_wb:455 - c_31 | Началась загрузка таблицы stocks из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:28:58.468 | SUCCESS  | __main__:load_from_wb:481 - c_31 | Загружена таблица stocks из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:28:58.473 | INFO     | __main__:delete_actual_part_from_bq:514 - c_31 | Началось удаление строк из таблицы stocks | Выполнено запросов: 0 из 1
+2022-11-14 00:29:01.015 | INFO     | __main__:delete_actual_part_from_bq:522 - c_31 | Удаление строк из таблицы stocks | Выполнено запросов: 1 из 1
+2022-11-14 00:29:01.016 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_31 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_31_stocks по id, которые будут заменены новыми данными
+2022-11-14 00:29:05.198 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_31 | Таблица stocks записана в BQ
+2022-11-14 00:29:05.438 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:29:05.439 | INFO     | __main__:load_from_wb:455 - c_31 | Началась загрузка таблицы orders из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:29:07.180 | SUCCESS  | __main__:load_from_wb:481 - c_31 | Загружена таблица orders из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:29:09.295 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_31 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_31_orders начиная с 2022-10-01 00:00:00
+2022-11-14 00:29:13.963 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_31 | Таблица orders записана в BQ
+2022-11-14 00:29:14.126 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:29:14.127 | INFO     | __main__:load_from_wb:455 - c_31 | Началась загрузка таблицы sales из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:29:16.101 | SUCCESS  | __main__:load_from_wb:481 - c_31 | Загружена таблица sales из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:29:19.156 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_31 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_31_sales начиная с 2022-10-01 00:00:00
+2022-11-14 00:29:22.920 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_31 | Таблица sales записана в BQ
+2022-11-14 00:29:23.129 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:29:23.129 | INFO     | __main__:make_main_table:184 - c_31 | Началось формирование таблицы main
+2022-11-14 00:29:23.149 | DEBUG    | __main__:make_main_table:198 - MAIN LENGTH BEGINNING: 2858
+2022-11-14 00:29:23.421 | DEBUG    | __main__:make_main_table:377 - MAIN LENGTH ENGING: 2858
+2022-11-14 00:29:23.421 | SUCCESS  | __main__:make_main_table:381 - c_31 | Таблица main сформирована
+2022-11-14 00:29:23.422 | INFO     | __main__:delete_actual_part_from_bq:514 - c_31 | Началось удаление строк из таблицы main | Выполнено запросов: 0 из 1
+2022-11-14 00:29:26.985 | INFO     | __main__:delete_actual_part_from_bq:522 - c_31 | Удаление строк из таблицы main | Выполнено запросов: 1 из 1
+2022-11-14 00:29:26.985 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_31 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_31_main по id, которые будут заменены новыми данными
+2022-11-14 00:29:31.514 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_31 | Таблица main записана в BQ
+2022-11-14 00:29:31.712 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:29:31.713 | INFO     | __main__:update_entire_main_table:129 - c_31 | Сценарий | Перезапись таблицы main
+2022-11-14 00:29:33.488 | INFO     | __main__:update_entire_main_table:138 - c_31 | Актуальная часть таблицы main только что обновлена, не учитываем ее при перезаписи
+2022-11-14 00:29:42.995 | SUCCESS  | __main__:bq_load_report_orders_sales_by_u_keys:395 - c_31 | Получены таблицы, образующие main
+2022-11-14 00:29:42.995 | INFO     | __main__:make_main_table:184 - c_31 | Началось формирование таблицы main
+2022-11-14 00:29:43.011 | DEBUG    | __main__:make_main_table:198 - MAIN LENGTH BEGINNING: 4069
+2022-11-14 00:29:43.277 | DEBUG    | __main__:make_main_table:377 - MAIN LENGTH ENGING: 4072
+2022-11-14 00:29:43.277 | ERROR    | __main__:wrapper:84 - Ошибка при выполнении
+Traceback (most recent call last):
+
+  File "metrix/main_archieve_3.py", line 973, in <module>
+    main_load()
+    └ <function main_load at 0x7fdc6af7e5e0>
+
+  File "metrix/main_archieve_3.py", line 71, in main_load
+    fix_result_decorator('main_rewrite', client_data)(update_entire_main_table)(client_data, main)
+    │                                    │            │                         │            └                             unique_key  ...   status
+    │                                    │            │                         │              0     3c8b0a7284244e7492198028e022db9b  ...  Продажа
+    │                                    │            │                         │              1     69f409b098de4...
+    │                                    │            │                         └ id                                                                31
+    │                                    │            │                           api_key             MDg2MTBlNjctMzMyYy00MGM4LTk4MjMtZTRl...
+    │                                    │            └ <function update_entire_main_table at 0x7fdc6af7e430>
+    │                                    └ id                                                                31
+    │                                      api_key             MDg2MTBlNjctMzMyYy00MGM4LTk4MjMtZTRl...
+    └ <function fix_result_decorator at 0x7fdc6af7e790>
+
+> File "metrix/main_archieve_3.py", line 79, in wrapper
+    ans = func(*args, **kwargs)
+          │     │       └ {}
+          │     └ (id                                                                31
+          │       api_key             MDg2MTBlNjctMzMyYy00MGM4LTk4MjMtZTR...
+          └ <function update_entire_main_table at 0x7fdc6af7e430>
+
+  File "metrix/main_archieve_3.py", line 148, in update_entire_main_table
+    main = process_main_table(report, orders, sales, client_data.id, client_data.row_num)
+           │                  │       │       │      │               └ id                                                                31
+           │                  │       │       │      │                 api_key             MDg2MTBlNjctMzMyYy00MGM4LTk4MjMtZTRl...
+           │                  │       │       │      └ id                                                                31
+           │                  │       │       │        api_key             MDg2MTBlNjctMzMyYy00MGM4LTk4MjMtZTRl...
+           │                  │       │       └                                   srid  ...                        unique_key
+           │                  │       │         0                                       ...    ...
+           │                  │       └                                     srid  ...                          unique_key
+           │                  │         0       ec8689f209ef44a48bf560510a312308  ....
+           │                  └                                   srid  ...                        unique_key
+           │                    0     13a0bb4e25a0420293447e8162618606  ...  13...
+           └ <function process_main_table at 0x7fdc6af7e670>
+
+  File "metrix/main_archieve_3.py", line 177, in process_main_table
+    main = make_main_table(report, orders, sales, client_id)
+           │               │       │       │      └ 31
+           │               │       │       └                                   srid  ...                        unique_key
+           │               │       │         0                                       ...    ...
+           │               │       └                                     srid  ...                          unique_key
+           │               │         0       ec8689f209ef44a48bf560510a312308  ....
+           │               └                                   srid  ...                        unique_key
+           │                 0     13a0bb4e25a0420293447e8162618606  ...  13...
+           └ <function make_main_table at 0x7fdc6af7e820>
+
+  File "metrix/main_archieve_3.py", line 379, in make_main_table
+    raise Exception('Количество строк в сформированной таблице main отличается \
+                                                               └                             unique_key  ...   status
+                                                                 0     13a0bb4e25a0420293447e8162618606  ...  Продажа
+                                                                 1     af0a038e8fb24...
+
+Exception: Количество строк в сформированной таблице main отличается от количества строк =сразу после отбора уникальных заказов. Возможно, при построении появились дубликаты unique_key
+2022-11-14 00:29:44.281 | ERROR    | __main__:wrapper:87 - c_31 | Таблица main_rewrite не обработана
+2022-11-14 00:29:44.282 | ERROR    | __main__:wrapper:88 - Количество строк в сформированной таблице main отличается от количества строк =сразу после отбора уникальных заказов. Возможно, при построении появились дубликаты unique_key
+2022-11-14 00:29:44.459 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:29:44.460 | SUCCESS  | __main__:main_load:72 - c_31 | Обработка клиента завершилась
+2022-11-14 00:29:45.104 | SUCCESS  | __main__:create_bq_tables_if_needed:535 - c_38 | Все таблицы созданы в BQ
+2022-11-14 00:29:45.104 | INFO     | __main__:main_load:40 - c_38 | Обработка началась
+2022-11-14 00:29:45.841 | INFO     | __main__:clients_first_load:952 - c_38 | Сценарий | Первичная выгрузка: False
+2022-11-14 00:29:45.842 | INFO     | __main__:check_if_tables_must_be_updated:724 - c_38 | Сценарий | Необходима выгрузка реализации из WB: False
+2022-11-14 00:29:45.842 | INFO     | __main__:check_if_tables_must_be_updated:731 - c_38 | Сценарий | Необходима выгрузка склада из WB: True
+2022-11-14 00:29:45.843 | INFO     | __main__:get_actual_part_start_date:968 - c_38 | Начинаем выгрузку с даты: 2022-10-01 00:00:00
+2022-11-14 00:29:49.217 | INFO     | __main__:load_report_from_bq:428 - c_38 | Получение таблицы report из BQ | Выполнено запросов: 1 из 1
+2022-11-14 00:29:49.339 | SUCCESS  | __main__:load_report_from_bq:430 - c_38 | Таблица report получена из BQ
+2022-11-14 00:29:49.340 | INFO     | __main__:load_from_wb:455 - c_38 | Началась загрузка таблицы stocks из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:29:49.923 | SUCCESS  | __main__:load_from_wb:481 - c_38 | Загружена таблица stocks из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:29:49.937 | INFO     | __main__:delete_actual_part_from_bq:514 - c_38 | Началось удаление строк из таблицы stocks | Выполнено запросов: 0 из 1
+2022-11-14 00:29:52.355 | INFO     | __main__:delete_actual_part_from_bq:522 - c_38 | Удаление строк из таблицы stocks | Выполнено запросов: 1 из 1
+2022-11-14 00:29:52.356 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_38 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_38_stocks по id, которые будут заменены новыми данными
+2022-11-14 00:29:56.159 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_38 | Таблица stocks записана в BQ
+2022-11-14 00:29:56.341 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:29:56.342 | INFO     | __main__:load_from_wb:455 - c_38 | Началась загрузка таблицы orders из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:29:57.910 | SUCCESS  | __main__:load_from_wb:481 - c_38 | Загружена таблица orders из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:30:00.195 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_38 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_38_orders начиная с 2022-10-01 00:00:00
+2022-11-14 00:30:05.323 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_38 | Таблица orders записана в BQ
+2022-11-14 00:30:05.527 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:30:05.527 | INFO     | __main__:load_from_wb:455 - c_38 | Началась загрузка таблицы sales из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:30:07.392 | SUCCESS  | __main__:load_from_wb:481 - c_38 | Загружена таблица sales из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:30:09.973 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_38 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_38_sales начиная с 2022-10-01 00:00:00
+2022-11-14 00:30:19.242 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_38 | Таблица sales записана в BQ
+2022-11-14 00:30:19.639 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:30:19.639 | INFO     | __main__:make_main_table:184 - c_38 | Началось формирование таблицы main
+2022-11-14 00:30:19.683 | DEBUG    | __main__:make_main_table:198 - MAIN LENGTH BEGINNING: 1349
+2022-11-14 00:30:21.766 | DEBUG    | __main__:make_main_table:377 - MAIN LENGTH ENGING: 1349
+2022-11-14 00:30:21.766 | SUCCESS  | __main__:make_main_table:381 - c_38 | Таблица main сформирована
+2022-11-14 00:30:21.768 | INFO     | __main__:delete_actual_part_from_bq:514 - c_38 | Началось удаление строк из таблицы main | Выполнено запросов: 0 из 1
+2022-11-14 00:30:24.932 | INFO     | __main__:delete_actual_part_from_bq:522 - c_38 | Удаление строк из таблицы main | Выполнено запросов: 1 из 1
+2022-11-14 00:30:24.932 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_38 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_38_main по id, которые будут заменены новыми данными
+2022-11-14 00:30:29.288 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_38 | Таблица main записана в BQ
+2022-11-14 00:30:29.481 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:30:29.698 | SUCCESS  | __main__:main_load:72 - c_38 | Обработка клиента завершилась
+2022-11-14 00:30:30.332 | SUCCESS  | __main__:create_bq_tables_if_needed:535 - c_39 | Все таблицы созданы в BQ
+2022-11-14 00:30:30.332 | INFO     | __main__:main_load:40 - c_39 | Обработка началась
+2022-11-14 00:30:31.154 | INFO     | __main__:clients_first_load:952 - c_39 | Сценарий | Первичная выгрузка: False
+2022-11-14 00:30:31.156 | INFO     | __main__:check_if_tables_must_be_updated:724 - c_39 | Сценарий | Необходима выгрузка реализации из WB: False
+2022-11-14 00:30:31.156 | INFO     | __main__:check_if_tables_must_be_updated:731 - c_39 | Сценарий | Необходима выгрузка склада из WB: True
+2022-11-14 00:30:31.157 | INFO     | __main__:get_actual_part_start_date:968 - c_39 | Начинаем выгрузку с даты: 2022-10-01 00:00:00
+2022-11-14 00:30:35.200 | INFO     | __main__:load_report_from_bq:428 - c_39 | Получение таблицы report из BQ | Выполнено запросов: 1 из 1
+2022-11-14 00:30:35.867 | SUCCESS  | __main__:load_report_from_bq:430 - c_39 | Таблица report получена из BQ
+2022-11-14 00:30:35.869 | INFO     | __main__:load_from_wb:455 - c_39 | Началась загрузка таблицы stocks из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:30:36.927 | SUCCESS  | __main__:load_from_wb:481 - c_39 | Загружена таблица stocks из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:30:36.932 | INFO     | __main__:delete_actual_part_from_bq:514 - c_39 | Началось удаление строк из таблицы stocks | Выполнено запросов: 0 из 1
+2022-11-14 00:30:39.480 | INFO     | __main__:delete_actual_part_from_bq:522 - c_39 | Удаление строк из таблицы stocks | Выполнено запросов: 1 из 1
+2022-11-14 00:30:39.481 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_39 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_39_stocks по id, которые будут заменены новыми данными
+2022-11-14 00:30:44.129 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_39 | Таблица stocks записана в BQ
+2022-11-14 00:30:44.842 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:30:44.843 | INFO     | __main__:load_from_wb:455 - c_39 | Началась загрузка таблицы orders из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:30:46.737 | SUCCESS  | __main__:load_from_wb:481 - c_39 | Загружена таблица orders из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:30:49.836 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_39 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_39_orders начиная с 2022-10-01 00:00:00
+2022-11-14 00:30:55.094 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_39 | Таблица orders записана в BQ
+2022-11-14 00:30:55.838 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:30:55.840 | INFO     | __main__:load_from_wb:455 - c_39 | Началась загрузка таблицы sales из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:30:58.261 | SUCCESS  | __main__:load_from_wb:481 - c_39 | Загружена таблица sales из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:31:00.714 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_39 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_39_sales начиная с 2022-10-01 00:00:00
+2022-11-14 00:31:04.583 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_39 | Таблица sales записана в BQ
+2022-11-14 00:31:04.728 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:31:04.729 | INFO     | __main__:make_main_table:184 - c_39 | Началось формирование таблицы main
+2022-11-14 00:31:04.763 | DEBUG    | __main__:make_main_table:198 - MAIN LENGTH BEGINNING: 5548
+2022-11-14 00:31:05.394 | DEBUG    | __main__:make_main_table:377 - MAIN LENGTH ENGING: 5548
+2022-11-14 00:31:05.395 | SUCCESS  | __main__:make_main_table:381 - c_39 | Таблица main сформирована
+2022-11-14 00:31:05.397 | INFO     | __main__:delete_actual_part_from_bq:514 - c_39 | Началось удаление строк из таблицы main | Выполнено запросов: 0 из 1
+2022-11-14 00:31:08.943 | INFO     | __main__:delete_actual_part_from_bq:522 - c_39 | Удаление строк из таблицы main | Выполнено запросов: 1 из 1
+2022-11-14 00:31:08.943 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_39 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_39_main по id, которые будут заменены новыми данными
+2022-11-14 00:31:14.221 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_39 | Таблица main записана в BQ
+2022-11-14 00:31:14.375 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:31:14.376 | SUCCESS  | __main__:main_load:72 - c_39 | Обработка клиента завершилась
+2022-11-14 00:31:15.153 | SUCCESS  | __main__:create_bq_tables_if_needed:535 - c_43 | Все таблицы созданы в BQ
+2022-11-14 00:31:15.153 | INFO     | __main__:main_load:40 - c_43 | Обработка началась
+2022-11-14 00:31:16.039 | INFO     | __main__:clients_first_load:952 - c_43 | Сценарий | Первичная выгрузка: False
+2022-11-14 00:31:16.041 | INFO     | __main__:check_if_tables_must_be_updated:724 - c_43 | Сценарий | Необходима выгрузка реализации из WB: False
+2022-11-14 00:31:16.041 | INFO     | __main__:check_if_tables_must_be_updated:731 - c_43 | Сценарий | Необходима выгрузка склада из WB: True
+2022-11-14 00:31:16.042 | INFO     | __main__:get_actual_part_start_date:968 - c_43 | Начинаем выгрузку с даты: 2022-10-01 00:00:00
+2022-11-14 00:31:19.966 | INFO     | __main__:load_report_from_bq:428 - c_43 | Получение таблицы report из BQ | Выполнено запросов: 1 из 1
+2022-11-14 00:31:20.174 | SUCCESS  | __main__:load_report_from_bq:430 - c_43 | Таблица report получена из BQ
+2022-11-14 00:31:20.176 | INFO     | __main__:load_from_wb:455 - c_43 | Началась загрузка таблицы stocks из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:31:21.229 | SUCCESS  | __main__:load_from_wb:481 - c_43 | Загружена таблица stocks из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:31:21.232 | INFO     | __main__:delete_actual_part_from_bq:514 - c_43 | Началось удаление строк из таблицы stocks | Выполнено запросов: 0 из 1
+2022-11-14 00:31:24.332 | INFO     | __main__:delete_actual_part_from_bq:522 - c_43 | Удаление строк из таблицы stocks | Выполнено запросов: 1 из 1
+2022-11-14 00:31:24.332 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_43 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_43_stocks по id, которые будут заменены новыми данными
+2022-11-14 00:31:30.296 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_43 | Таблица stocks записана в BQ
+2022-11-14 00:31:30.476 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:31:30.477 | INFO     | __main__:load_from_wb:455 - c_43 | Началась загрузка таблицы orders из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:31:32.546 | SUCCESS  | __main__:load_from_wb:481 - c_43 | Загружена таблица orders из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:31:35.084 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_43 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_43_orders начиная с 2022-10-01 00:00:00
+2022-11-14 00:31:40.705 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_43 | Таблица orders записана в BQ
+2022-11-14 00:31:40.871 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:31:40.874 | INFO     | __main__:load_from_wb:455 - c_43 | Началась загрузка таблицы sales из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:31:42.927 | SUCCESS  | __main__:load_from_wb:481 - c_43 | Загружена таблица sales из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:31:50.772 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_43 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_43_sales начиная с 2022-10-01 00:00:00
+2022-11-14 00:31:59.644 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_43 | Таблица sales записана в BQ
+2022-11-14 00:31:59.840 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:31:59.841 | INFO     | __main__:make_main_table:184 - c_43 | Началось формирование таблицы main
+2022-11-14 00:31:59.889 | DEBUG    | __main__:make_main_table:198 - MAIN LENGTH BEGINNING: 6167
+2022-11-14 00:32:00.383 | DEBUG    | __main__:make_main_table:377 - MAIN LENGTH ENGING: 6167
+2022-11-14 00:32:00.383 | SUCCESS  | __main__:make_main_table:381 - c_43 | Таблица main сформирована
+2022-11-14 00:32:00.386 | INFO     | __main__:delete_actual_part_from_bq:514 - c_43 | Началось удаление строк из таблицы main | Выполнено запросов: 0 из 1
+2022-11-14 00:32:03.963 | INFO     | __main__:delete_actual_part_from_bq:522 - c_43 | Удаление строк из таблицы main | Выполнено запросов: 1 из 1
+2022-11-14 00:32:03.964 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_43 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_43_main по id, которые будут заменены новыми данными
+2022-11-14 00:32:08.486 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_43 | Таблица main записана в BQ
+2022-11-14 00:32:08.613 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:32:08.615 | SUCCESS  | __main__:main_load:72 - c_43 | Обработка клиента завершилась
+2022-11-14 00:32:09.304 | SUCCESS  | __main__:create_bq_tables_if_needed:535 - c_44 | Все таблицы созданы в BQ
+2022-11-14 00:32:09.304 | INFO     | __main__:main_load:40 - c_44 | Обработка началась
+2022-11-14 00:32:10.142 | INFO     | __main__:clients_first_load:952 - c_44 | Сценарий | Первичная выгрузка: False
+2022-11-14 00:32:10.144 | INFO     | __main__:check_if_tables_must_be_updated:724 - c_44 | Сценарий | Необходима выгрузка реализации из WB: False
+2022-11-14 00:32:10.144 | INFO     | __main__:check_if_tables_must_be_updated:731 - c_44 | Сценарий | Необходима выгрузка склада из WB: True
+2022-11-14 00:32:10.144 | INFO     | __main__:get_actual_part_start_date:968 - c_44 | Начинаем выгрузку с даты: 2022-10-01 00:00:00
+2022-11-14 00:32:13.531 | INFO     | __main__:load_report_from_bq:428 - c_44 | Получение таблицы report из BQ | Выполнено запросов: 1 из 1
+2022-11-14 00:32:13.644 | SUCCESS  | __main__:load_report_from_bq:430 - c_44 | Таблица report получена из BQ
+2022-11-14 00:32:13.646 | INFO     | __main__:load_from_wb:455 - c_44 | Началась загрузка таблицы stocks из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:32:14.548 | SUCCESS  | __main__:load_from_wb:481 - c_44 | Загружена таблица stocks из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:32:14.551 | INFO     | __main__:delete_actual_part_from_bq:514 - c_44 | Началось удаление строк из таблицы stocks | Выполнено запросов: 0 из 1
+2022-11-14 00:32:16.764 | INFO     | __main__:delete_actual_part_from_bq:522 - c_44 | Удаление строк из таблицы stocks | Выполнено запросов: 1 из 1
+2022-11-14 00:32:16.764 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_44 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_44_stocks по id, которые будут заменены новыми данными
+2022-11-14 00:32:20.488 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_44 | Таблица stocks записана в BQ
+2022-11-14 00:32:20.664 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:32:20.665 | INFO     | __main__:load_from_wb:455 - c_44 | Началась загрузка таблицы orders из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:32:22.159 | SUCCESS  | __main__:load_from_wb:481 - c_44 | Загружена таблица orders из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:32:24.333 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_44 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_44_orders начиная с 2022-10-01 00:00:00
+2022-11-14 00:32:27.726 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_44 | Таблица orders записана в BQ
+2022-11-14 00:32:27.897 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:32:27.902 | INFO     | __main__:load_from_wb:455 - c_44 | Началась загрузка таблицы sales из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:32:29.256 | SUCCESS  | __main__:load_from_wb:481 - c_44 | Загружена таблица sales из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:32:31.739 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_44 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_44_sales начиная с 2022-10-01 00:00:00
+2022-11-14 00:32:36.448 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_44 | Таблица sales записана в BQ
+2022-11-14 00:32:36.608 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:32:36.608 | INFO     | __main__:make_main_table:184 - c_44 | Началось формирование таблицы main
+2022-11-14 00:32:36.631 | DEBUG    | __main__:make_main_table:198 - MAIN LENGTH BEGINNING: 870
+2022-11-14 00:32:36.903 | DEBUG    | __main__:make_main_table:377 - MAIN LENGTH ENGING: 870
+2022-11-14 00:32:36.903 | SUCCESS  | __main__:make_main_table:381 - c_44 | Таблица main сформирована
+2022-11-14 00:32:36.904 | INFO     | __main__:delete_actual_part_from_bq:514 - c_44 | Началось удаление строк из таблицы main | Выполнено запросов: 0 из 1
+2022-11-14 00:32:39.721 | INFO     | __main__:delete_actual_part_from_bq:522 - c_44 | Удаление строк из таблицы main | Выполнено запросов: 1 из 1
+2022-11-14 00:32:39.721 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_44 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_44_main по id, которые будут заменены новыми данными
+2022-11-14 00:32:42.843 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_44 | Таблица main записана в BQ
+2022-11-14 00:32:43.000 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:32:43.002 | SUCCESS  | __main__:main_load:72 - c_44 | Обработка клиента завершилась
+2022-11-14 00:32:43.661 | SUCCESS  | __main__:create_bq_tables_if_needed:535 - c_46 | Все таблицы созданы в BQ
+2022-11-14 00:32:43.661 | INFO     | __main__:main_load:40 - c_46 | Обработка началась
+2022-11-14 00:32:44.548 | INFO     | __main__:clients_first_load:952 - c_46 | Сценарий | Первичная выгрузка: False
+2022-11-14 00:32:44.550 | INFO     | __main__:check_if_tables_must_be_updated:724 - c_46 | Сценарий | Необходима выгрузка реализации из WB: False
+2022-11-14 00:32:44.550 | INFO     | __main__:check_if_tables_must_be_updated:731 - c_46 | Сценарий | Необходима выгрузка склада из WB: True
+2022-11-14 00:32:44.551 | INFO     | __main__:get_actual_part_start_date:968 - c_46 | Начинаем выгрузку с даты: 2022-10-01 00:00:00
+2022-11-14 00:32:48.446 | INFO     | __main__:load_report_from_bq:428 - c_46 | Получение таблицы report из BQ | Выполнено запросов: 1 из 1
+2022-11-14 00:32:48.682 | SUCCESS  | __main__:load_report_from_bq:430 - c_46 | Таблица report получена из BQ
+2022-11-14 00:32:48.683 | INFO     | __main__:load_from_wb:455 - c_46 | Началась загрузка таблицы stocks из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:32:49.404 | SUCCESS  | __main__:load_from_wb:481 - c_46 | Загружена таблица stocks из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:32:49.408 | INFO     | __main__:delete_actual_part_from_bq:514 - c_46 | Началось удаление строк из таблицы stocks | Выполнено запросов: 0 из 1
+2022-11-14 00:32:51.964 | INFO     | __main__:delete_actual_part_from_bq:522 - c_46 | Удаление строк из таблицы stocks | Выполнено запросов: 1 из 1
+2022-11-14 00:32:51.964 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_46 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_46_stocks по id, которые будут заменены новыми данными
+2022-11-14 00:32:55.160 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_46 | Таблица stocks записана в BQ
+2022-11-14 00:32:55.329 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:32:55.330 | INFO     | __main__:load_from_wb:455 - c_46 | Началась загрузка таблицы orders из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:32:57.405 | SUCCESS  | __main__:load_from_wb:481 - c_46 | Загружена таблица orders из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:32:59.573 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_46 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_46_orders начиная с 2022-10-01 00:00:00
+2022-11-14 00:33:03.019 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_46 | Таблица orders записана в BQ
+2022-11-14 00:33:03.219 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:33:03.220 | INFO     | __main__:load_from_wb:455 - c_46 | Началась загрузка таблицы sales из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:33:05.052 | SUCCESS  | __main__:load_from_wb:481 - c_46 | Загружена таблица sales из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:33:07.297 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_46 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_46_sales начиная с 2022-10-01 00:00:00
+2022-11-14 00:33:10.301 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_46 | Таблица sales записана в BQ
+2022-11-14 00:33:10.482 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:33:10.482 | INFO     | __main__:make_main_table:184 - c_46 | Началось формирование таблицы main
+2022-11-14 00:33:10.522 | DEBUG    | __main__:make_main_table:198 - MAIN LENGTH BEGINNING: 3643
+2022-11-14 00:33:10.884 | DEBUG    | __main__:make_main_table:377 - MAIN LENGTH ENGING: 3643
+2022-11-14 00:33:10.884 | SUCCESS  | __main__:make_main_table:381 - c_46 | Таблица main сформирована
+2022-11-14 00:33:10.885 | INFO     | __main__:delete_actual_part_from_bq:514 - c_46 | Началось удаление строк из таблицы main | Выполнено запросов: 0 из 1
+2022-11-14 00:33:14.480 | INFO     | __main__:delete_actual_part_from_bq:522 - c_46 | Удаление строк из таблицы main | Выполнено запросов: 1 из 1
+2022-11-14 00:33:14.480 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_46 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_46_main по id, которые будут заменены новыми данными
+2022-11-14 00:33:17.749 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_46 | Таблица main записана в BQ
+2022-11-14 00:33:17.890 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:33:17.891 | SUCCESS  | __main__:main_load:72 - c_46 | Обработка клиента завершилась
+2022-11-14 00:33:18.519 | SUCCESS  | __main__:create_bq_tables_if_needed:535 - c_54 | Все таблицы созданы в BQ
+2022-11-14 00:33:18.519 | INFO     | __main__:main_load:40 - c_54 | Обработка началась
+2022-11-14 00:33:19.443 | INFO     | __main__:clients_first_load:952 - c_54 | Сценарий | Первичная выгрузка: False
+2022-11-14 00:33:19.444 | INFO     | __main__:check_if_tables_must_be_updated:724 - c_54 | Сценарий | Необходима выгрузка реализации из WB: False
+2022-11-14 00:33:19.445 | INFO     | __main__:check_if_tables_must_be_updated:731 - c_54 | Сценарий | Необходима выгрузка склада из WB: True
+2022-11-14 00:33:19.445 | INFO     | __main__:get_actual_part_start_date:968 - c_54 | Начинаем выгрузку с даты: 2022-10-01 00:00:00
+2022-11-14 00:33:23.172 | INFO     | __main__:load_report_from_bq:428 - c_54 | Получение таблицы report из BQ | Выполнено запросов: 1 из 1
+2022-11-14 00:33:23.245 | SUCCESS  | __main__:load_report_from_bq:430 - c_54 | Таблица report получена из BQ
+2022-11-14 00:33:23.247 | INFO     | __main__:load_from_wb:455 - c_54 | Началась загрузка таблицы stocks из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:33:24.019 | SUCCESS  | __main__:load_from_wb:481 - c_54 | Загружена таблица stocks из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:33:24.022 | INFO     | __main__:delete_actual_part_from_bq:514 - c_54 | Началось удаление строк из таблицы stocks | Выполнено запросов: 0 из 1
+2022-11-14 00:33:26.203 | INFO     | __main__:delete_actual_part_from_bq:522 - c_54 | Удаление строк из таблицы stocks | Выполнено запросов: 1 из 1
+2022-11-14 00:33:26.204 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_54 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_54_stocks по id, которые будут заменены новыми данными
+2022-11-14 00:33:29.551 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_54 | Таблица stocks записана в BQ
+2022-11-14 00:33:29.693 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:33:29.694 | INFO     | __main__:load_from_wb:455 - c_54 | Началась загрузка таблицы orders из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:33:31.079 | SUCCESS  | __main__:load_from_wb:481 - c_54 | Загружена таблица orders из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:33:33.246 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_54 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_54_orders начиная с 2022-10-01 00:00:00
+2022-11-14 00:33:42.039 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_54 | Таблица orders записана в BQ
+2022-11-14 00:33:42.203 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:33:42.206 | INFO     | __main__:load_from_wb:455 - c_54 | Началась загрузка таблицы sales из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:33:43.577 | SUCCESS  | __main__:load_from_wb:481 - c_54 | Загружена таблица sales из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:33:45.767 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_54 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_54_sales начиная с 2022-10-01 00:00:00
+2022-11-14 00:33:48.605 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_54 | Таблица sales записана в BQ
+2022-11-14 00:33:48.732 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:33:48.732 | INFO     | __main__:make_main_table:184 - c_54 | Началось формирование таблицы main
+2022-11-14 00:33:48.748 | DEBUG    | __main__:make_main_table:198 - MAIN LENGTH BEGINNING: 1244
+2022-11-14 00:33:48.977 | DEBUG    | __main__:make_main_table:377 - MAIN LENGTH ENGING: 1244
+2022-11-14 00:33:48.977 | SUCCESS  | __main__:make_main_table:381 - c_54 | Таблица main сформирована
+2022-11-14 00:33:48.978 | INFO     | __main__:delete_actual_part_from_bq:514 - c_54 | Началось удаление строк из таблицы main | Выполнено запросов: 0 из 1
+2022-11-14 00:33:52.028 | INFO     | __main__:delete_actual_part_from_bq:522 - c_54 | Удаление строк из таблицы main | Выполнено запросов: 1 из 1
+2022-11-14 00:33:52.029 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_54 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_54_main по id, которые будут заменены новыми данными
+2022-11-14 00:33:57.169 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_54 | Таблица main записана в BQ
+2022-11-14 00:33:57.355 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:33:57.357 | SUCCESS  | __main__:main_load:72 - c_54 | Обработка клиента завершилась
+2022-11-14 00:33:58.151 | SUCCESS  | __main__:create_bq_tables_if_needed:535 - c_66 | Все таблицы созданы в BQ
+2022-11-14 00:33:58.152 | INFO     | __main__:main_load:40 - c_66 | Обработка началась
+2022-11-14 00:33:58.913 | INFO     | __main__:clients_first_load:952 - c_66 | Сценарий | Первичная выгрузка: False
+2022-11-14 00:33:58.914 | INFO     | __main__:check_if_tables_must_be_updated:724 - c_66 | Сценарий | Необходима выгрузка реализации из WB: False
+2022-11-14 00:33:58.914 | INFO     | __main__:check_if_tables_must_be_updated:731 - c_66 | Сценарий | Необходима выгрузка склада из WB: True
+2022-11-14 00:33:58.914 | INFO     | __main__:get_actual_part_start_date:968 - c_66 | Начинаем выгрузку с даты: 2022-10-01 00:00:00
+2022-11-14 00:34:02.300 | INFO     | __main__:load_report_from_bq:428 - c_66 | Получение таблицы report из BQ | Выполнено запросов: 1 из 1
+2022-11-14 00:34:02.353 | SUCCESS  | __main__:load_report_from_bq:430 - c_66 | Таблица report получена из BQ
+2022-11-14 00:34:02.354 | INFO     | __main__:load_from_wb:455 - c_66 | Началась загрузка таблицы stocks из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:34:02.980 | SUCCESS  | __main__:load_from_wb:481 - c_66 | Загружена таблица stocks из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:34:02.984 | INFO     | __main__:delete_actual_part_from_bq:514 - c_66 | Началось удаление строк из таблицы stocks | Выполнено запросов: 0 из 1
+2022-11-14 00:34:08.249 | INFO     | __main__:delete_actual_part_from_bq:522 - c_66 | Удаление строк из таблицы stocks | Выполнено запросов: 1 из 1
+2022-11-14 00:34:08.249 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_66 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_66_stocks по id, которые будут заменены новыми данными
+2022-11-14 00:34:11.586 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_66 | Таблица stocks записана в BQ
+2022-11-14 00:34:11.759 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:34:11.760 | INFO     | __main__:load_from_wb:455 - c_66 | Началась загрузка таблицы orders из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:34:12.450 | SUCCESS  | __main__:load_from_wb:481 - c_66 | Загружена таблица orders из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:34:14.917 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_66 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_66_orders начиная с 2022-10-01 00:00:00
+2022-11-14 00:34:19.150 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_66 | Таблица orders записана в BQ
+2022-11-14 00:34:19.328 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:34:19.330 | INFO     | __main__:load_from_wb:455 - c_66 | Началась загрузка таблицы sales из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:34:19.969 | SUCCESS  | __main__:load_from_wb:481 - c_66 | Загружена таблица sales из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:34:22.583 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_66 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_66_sales начиная с 2022-10-01 00:00:00
+2022-11-14 00:34:28.060 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_66 | Таблица sales записана в BQ
+2022-11-14 00:34:28.299 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:34:28.299 | INFO     | __main__:make_main_table:184 - c_66 | Началось формирование таблицы main
+2022-11-14 00:34:28.319 | DEBUG    | __main__:make_main_table:198 - MAIN LENGTH BEGINNING: 40
+2022-11-14 00:34:28.462 | DEBUG    | __main__:make_main_table:377 - MAIN LENGTH ENGING: 40
+2022-11-14 00:34:28.462 | SUCCESS  | __main__:make_main_table:381 - c_66 | Таблица main сформирована
+2022-11-14 00:34:28.463 | INFO     | __main__:delete_actual_part_from_bq:514 - c_66 | Началось удаление строк из таблицы main | Выполнено запросов: 0 из 1
+2022-11-14 00:34:30.924 | INFO     | __main__:delete_actual_part_from_bq:522 - c_66 | Удаление строк из таблицы main | Выполнено запросов: 1 из 1
+2022-11-14 00:34:30.924 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_66 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_66_main по id, которые будут заменены новыми данными
+2022-11-14 00:34:34.375 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_66 | Таблица main записана в BQ
+2022-11-14 00:34:34.527 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:34:34.528 | SUCCESS  | __main__:main_load:72 - c_66 | Обработка клиента завершилась
+2022-11-14 00:34:35.166 | SUCCESS  | __main__:create_bq_tables_if_needed:535 - c_72 | Все таблицы созданы в BQ
+2022-11-14 00:34:35.369 | INFO     | __main__:main_load:40 - c_72 | Обработка началась
+2022-11-14 00:34:36.186 | INFO     | __main__:clients_first_load:952 - c_72 | Сценарий | Первичная выгрузка: False
+2022-11-14 00:34:36.188 | INFO     | __main__:check_if_tables_must_be_updated:724 - c_72 | Сценарий | Необходима выгрузка реализации из WB: False
+2022-11-14 00:34:36.189 | INFO     | __main__:check_if_tables_must_be_updated:731 - c_72 | Сценарий | Необходима выгрузка склада из WB: True
+2022-11-14 00:34:36.189 | INFO     | __main__:get_actual_part_start_date:968 - c_72 | Начинаем выгрузку с даты: 2022-10-01 00:00:00
+2022-11-14 00:34:39.881 | INFO     | __main__:load_report_from_bq:428 - c_72 | Получение таблицы report из BQ | Выполнено запросов: 1 из 1
+2022-11-14 00:34:40.101 | SUCCESS  | __main__:load_report_from_bq:430 - c_72 | Таблица report получена из BQ
+2022-11-14 00:34:40.102 | INFO     | __main__:load_from_wb:455 - c_72 | Началась загрузка таблицы stocks из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:34:40.840 | SUCCESS  | __main__:load_from_wb:481 - c_72 | Загружена таблица stocks из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:34:40.843 | INFO     | __main__:delete_actual_part_from_bq:514 - c_72 | Началось удаление строк из таблицы stocks | Выполнено запросов: 0 из 1
+2022-11-14 00:34:42.963 | INFO     | __main__:delete_actual_part_from_bq:522 - c_72 | Удаление строк из таблицы stocks | Выполнено запросов: 1 из 1
+2022-11-14 00:34:42.963 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_72 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_72_stocks по id, которые будут заменены новыми данными
+2022-11-14 00:34:50.027 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_72 | Таблица stocks записана в BQ
+2022-11-14 00:34:50.210 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:34:50.211 | INFO     | __main__:load_from_wb:455 - c_72 | Началась загрузка таблицы orders из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:34:51.928 | SUCCESS  | __main__:load_from_wb:481 - c_72 | Загружена таблица orders из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:34:53.999 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_72 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_72_orders начиная с 2022-10-01 00:00:00
+2022-11-14 00:34:58.659 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_72 | Таблица orders записана в BQ
+2022-11-14 00:34:58.866 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:34:58.866 | INFO     | __main__:load_from_wb:455 - c_72 | Началась загрузка таблицы sales из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:35:00.585 | SUCCESS  | __main__:load_from_wb:481 - c_72 | Загружена таблица sales из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:35:03.072 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_72 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_72_sales начиная с 2022-10-01 00:00:00
+2022-11-14 00:35:06.219 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_72 | Таблица sales записана в BQ
+2022-11-14 00:35:06.479 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:35:06.479 | INFO     | __main__:make_main_table:184 - c_72 | Началось формирование таблицы main
+2022-11-14 00:35:06.549 | DEBUG    | __main__:make_main_table:198 - MAIN LENGTH BEGINNING: 2417
+2022-11-14 00:35:07.757 | DEBUG    | __main__:make_main_table:377 - MAIN LENGTH ENGING: 2417
+2022-11-14 00:35:07.758 | SUCCESS  | __main__:make_main_table:381 - c_72 | Таблица main сформирована
+2022-11-14 00:35:07.759 | INFO     | __main__:delete_actual_part_from_bq:514 - c_72 | Началось удаление строк из таблицы main | Выполнено запросов: 0 из 1
+2022-11-14 00:35:10.904 | INFO     | __main__:delete_actual_part_from_bq:522 - c_72 | Удаление строк из таблицы main | Выполнено запросов: 1 из 1
+2022-11-14 00:35:10.905 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_72 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_72_main по id, которые будут заменены новыми данными
+2022-11-14 00:35:16.783 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_72 | Таблица main записана в BQ
+2022-11-14 00:35:16.992 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:35:16.992 | SUCCESS  | __main__:main_load:72 - c_72 | Обработка клиента завершилась
+2022-11-14 00:35:17.760 | SUCCESS  | __main__:create_bq_tables_if_needed:535 - c_77 | Все таблицы созданы в BQ
+2022-11-14 00:35:17.760 | INFO     | __main__:main_load:40 - c_77 | Обработка началась
+2022-11-14 00:35:18.658 | INFO     | __main__:clients_first_load:952 - c_77 | Сценарий | Первичная выгрузка: False
+2022-11-14 00:35:18.660 | INFO     | __main__:check_if_tables_must_be_updated:724 - c_77 | Сценарий | Необходима выгрузка реализации из WB: False
+2022-11-14 00:35:18.660 | INFO     | __main__:check_if_tables_must_be_updated:731 - c_77 | Сценарий | Необходима выгрузка склада из WB: True
+2022-11-14 00:35:18.661 | INFO     | __main__:get_actual_part_start_date:968 - c_77 | Начинаем выгрузку с даты: 2022-10-01 00:00:00
+2022-11-14 00:35:23.322 | INFO     | __main__:load_report_from_bq:428 - c_77 | Получение таблицы report из BQ | Выполнено запросов: 1 из 1
+2022-11-14 00:35:23.939 | SUCCESS  | __main__:load_report_from_bq:430 - c_77 | Таблица report получена из BQ
+2022-11-14 00:35:23.944 | INFO     | __main__:load_from_wb:455 - c_77 | Началась загрузка таблицы stocks из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:35:25.058 | SUCCESS  | __main__:load_from_wb:481 - c_77 | Загружена таблица stocks из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:35:25.064 | INFO     | __main__:delete_actual_part_from_bq:514 - c_77 | Началось удаление строк из таблицы stocks | Выполнено запросов: 0 из 1
+2022-11-14 00:35:28.452 | INFO     | __main__:delete_actual_part_from_bq:522 - c_77 | Удаление строк из таблицы stocks | Выполнено запросов: 1 из 1
+2022-11-14 00:35:28.452 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_77 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_77_stocks по id, которые будут заменены новыми данными
+2022-11-14 00:35:33.781 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_77 | Таблица stocks записана в BQ
+2022-11-14 00:35:33.933 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:35:33.933 | INFO     | __main__:load_from_wb:455 - c_77 | Началась загрузка таблицы orders из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:35:37.264 | SUCCESS  | __main__:load_from_wb:481 - c_77 | Загружена таблица orders из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:35:39.871 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_77 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_77_orders начиная с 2022-10-01 00:00:00
+2022-11-14 00:35:48.008 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_77 | Таблица orders записана в BQ
+2022-11-14 00:35:48.165 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:35:48.166 | INFO     | __main__:load_from_wb:455 - c_77 | Началась загрузка таблицы sales из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:35:50.687 | SUCCESS  | __main__:load_from_wb:481 - c_77 | Загружена таблица sales из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:35:54.000 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_77 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_77_sales начиная с 2022-10-01 00:00:00
+2022-11-14 00:36:01.957 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_77 | Таблица sales записана в BQ
+2022-11-14 00:36:02.300 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:36:02.301 | INFO     | __main__:make_main_table:184 - c_77 | Началось формирование таблицы main
+2022-11-14 00:36:02.402 | DEBUG    | __main__:make_main_table:198 - MAIN LENGTH BEGINNING: 20863
+2022-11-14 00:36:04.084 | DEBUG    | __main__:make_main_table:377 - MAIN LENGTH ENGING: 20863
+2022-11-14 00:36:04.084 | SUCCESS  | __main__:make_main_table:381 - c_77 | Таблица main сформирована
+2022-11-14 00:36:04.094 | INFO     | __main__:delete_actual_part_from_bq:514 - c_77 | Началось удаление строк из таблицы main | Выполнено запросов: 0 из 1
+2022-11-14 00:36:10.176 | INFO     | __main__:delete_actual_part_from_bq:522 - c_77 | Удаление строк из таблицы main | Выполнено запросов: 1 из 1
+2022-11-14 00:36:10.177 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_77 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_77_main по id, которые будут заменены новыми данными
+2022-11-14 00:36:15.339 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_77 | Таблица main записана в BQ
+2022-11-14 00:36:15.525 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:36:15.526 | SUCCESS  | __main__:main_load:72 - c_77 | Обработка клиента завершилась
+2022-11-14 00:36:16.343 | SUCCESS  | __main__:create_bq_tables_if_needed:535 - c_78 | Все таблицы созданы в BQ
+2022-11-14 00:36:16.344 | INFO     | __main__:main_load:40 - c_78 | Обработка началась
+2022-11-14 00:36:17.236 | INFO     | __main__:clients_first_load:952 - c_78 | Сценарий | Первичная выгрузка: False
+2022-11-14 00:36:17.238 | INFO     | __main__:check_if_tables_must_be_updated:724 - c_78 | Сценарий | Необходима выгрузка реализации из WB: False
+2022-11-14 00:36:17.238 | INFO     | __main__:check_if_tables_must_be_updated:731 - c_78 | Сценарий | Необходима выгрузка склада из WB: True
+2022-11-14 00:36:17.239 | INFO     | __main__:get_actual_part_start_date:968 - c_78 | Начинаем выгрузку с даты: 2022-10-01 00:00:00
+2022-11-14 00:36:20.709 | INFO     | __main__:load_report_from_bq:428 - c_78 | Получение таблицы report из BQ | Выполнено запросов: 1 из 1
+2022-11-14 00:36:20.763 | SUCCESS  | __main__:load_report_from_bq:430 - c_78 | Таблица report получена из BQ
+2022-11-14 00:36:20.767 | INFO     | __main__:load_from_wb:455 - c_78 | Началась загрузка таблицы stocks из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:36:21.971 | SUCCESS  | __main__:load_from_wb:481 - c_78 | Загружена таблица stocks из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:36:21.976 | INFO     | __main__:delete_actual_part_from_bq:514 - c_78 | Началось удаление строк из таблицы stocks | Выполнено запросов: 0 из 1
+2022-11-14 00:36:24.283 | INFO     | __main__:delete_actual_part_from_bq:522 - c_78 | Удаление строк из таблицы stocks | Выполнено запросов: 1 из 1
+2022-11-14 00:36:24.283 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_78 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_78_stocks по id, которые будут заменены новыми данными
+2022-11-14 00:36:28.933 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_78 | Таблица stocks записана в BQ
+2022-11-14 00:36:29.081 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:36:29.082 | INFO     | __main__:load_from_wb:455 - c_78 | Началась загрузка таблицы orders из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:36:30.455 | SUCCESS  | __main__:load_from_wb:481 - c_78 | Загружена таблица orders из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:36:32.755 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_78 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_78_orders начиная с 2022-10-01 00:00:00
+2022-11-14 00:36:39.107 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_78 | Таблица orders записана в BQ
+2022-11-14 00:36:39.265 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:36:39.276 | INFO     | __main__:load_from_wb:455 - c_78 | Началась загрузка таблицы sales из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:36:40.455 | SUCCESS  | __main__:load_from_wb:481 - c_78 | Загружена таблица sales из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:36:42.697 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_78 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_78_sales начиная с 2022-10-01 00:00:00
+2022-11-14 00:36:50.200 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_78 | Таблица sales записана в BQ
+2022-11-14 00:36:50.363 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:36:50.364 | INFO     | __main__:make_main_table:184 - c_78 | Началось формирование таблицы main
+2022-11-14 00:36:50.379 | DEBUG    | __main__:make_main_table:198 - MAIN LENGTH BEGINNING: 572
+2022-11-14 00:36:50.526 | DEBUG    | __main__:make_main_table:377 - MAIN LENGTH ENGING: 572
+2022-11-14 00:36:50.527 | SUCCESS  | __main__:make_main_table:381 - c_78 | Таблица main сформирована
+2022-11-14 00:36:50.527 | INFO     | __main__:delete_actual_part_from_bq:514 - c_78 | Началось удаление строк из таблицы main | Выполнено запросов: 0 из 1
+2022-11-14 00:36:52.936 | INFO     | __main__:delete_actual_part_from_bq:522 - c_78 | Удаление строк из таблицы main | Выполнено запросов: 1 из 1
+2022-11-14 00:36:52.936 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_78 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_78_main по id, которые будут заменены новыми данными
+2022-11-14 00:36:55.931 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_78 | Таблица main записана в BQ
+2022-11-14 00:36:56.060 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:36:56.065 | SUCCESS  | __main__:main_load:72 - c_78 | Обработка клиента завершилась
+2022-11-14 00:36:56.837 | SUCCESS  | __main__:create_bq_tables_if_needed:535 - c_80 | Все таблицы созданы в BQ
+2022-11-14 00:36:56.838 | INFO     | __main__:main_load:40 - c_80 | Обработка началась
+2022-11-14 00:36:57.608 | INFO     | __main__:clients_first_load:952 - c_80 | Сценарий | Первичная выгрузка: False
+2022-11-14 00:36:57.609 | INFO     | __main__:check_if_tables_must_be_updated:724 - c_80 | Сценарий | Необходима выгрузка реализации из WB: False
+2022-11-14 00:36:57.610 | INFO     | __main__:check_if_tables_must_be_updated:731 - c_80 | Сценарий | Необходима выгрузка склада из WB: True
+2022-11-14 00:36:57.610 | INFO     | __main__:get_actual_part_start_date:968 - c_80 | Начинаем выгрузку с даты: 2022-10-01 00:00:00
+2022-11-14 00:37:02.198 | INFO     | __main__:load_report_from_bq:428 - c_80 | Получение таблицы report из BQ | Выполнено запросов: 1 из 1
+2022-11-14 00:37:02.946 | SUCCESS  | __main__:load_report_from_bq:430 - c_80 | Таблица report получена из BQ
+2022-11-14 00:37:02.948 | INFO     | __main__:load_from_wb:455 - c_80 | Началась загрузка таблицы stocks из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:37:03.868 | SUCCESS  | __main__:load_from_wb:481 - c_80 | Загружена таблица stocks из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:37:03.874 | INFO     | __main__:delete_actual_part_from_bq:514 - c_80 | Началось удаление строк из таблицы stocks | Выполнено запросов: 0 из 1
+2022-11-14 00:37:06.410 | INFO     | __main__:delete_actual_part_from_bq:522 - c_80 | Удаление строк из таблицы stocks | Выполнено запросов: 1 из 1
+2022-11-14 00:37:06.410 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_80 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_80_stocks по id, которые будут заменены новыми данными
+2022-11-14 00:37:09.690 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_80 | Таблица stocks записана в BQ
+2022-11-14 00:37:09.855 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:37:09.856 | INFO     | __main__:load_from_wb:455 - c_80 | Началась загрузка таблицы orders из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:37:12.367 | SUCCESS  | __main__:load_from_wb:481 - c_80 | Загружена таблица orders из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:37:14.794 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_80 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_80_orders начиная с 2022-10-01 00:00:00
+2022-11-14 00:37:20.085 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_80 | Таблица orders записана в BQ
+2022-11-14 00:37:20.276 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:37:20.277 | INFO     | __main__:load_from_wb:455 - c_80 | Началась загрузка таблицы sales из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:37:23.241 | SUCCESS  | __main__:load_from_wb:481 - c_80 | Загружена таблица sales из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:37:25.457 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_80 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_80_sales начиная с 2022-10-01 00:00:00
+2022-11-14 00:37:32.853 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_80 | Таблица sales записана в BQ
+2022-11-14 00:37:33.012 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:37:33.012 | INFO     | __main__:make_main_table:184 - c_80 | Началось формирование таблицы main
+2022-11-14 00:37:33.065 | DEBUG    | __main__:make_main_table:198 - MAIN LENGTH BEGINNING: 12818
+2022-11-14 00:37:33.721 | DEBUG    | __main__:make_main_table:377 - MAIN LENGTH ENGING: 12818
+2022-11-14 00:37:33.721 | SUCCESS  | __main__:make_main_table:381 - c_80 | Таблица main сформирована
+2022-11-14 00:37:33.725 | INFO     | __main__:delete_actual_part_from_bq:514 - c_80 | Началось удаление строк из таблицы main | Выполнено запросов: 0 из 1
+2022-11-14 00:37:38.169 | INFO     | __main__:delete_actual_part_from_bq:522 - c_80 | Удаление строк из таблицы main | Выполнено запросов: 1 из 1
+2022-11-14 00:37:38.169 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_80 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_80_main по id, которые будут заменены новыми данными
+2022-11-14 00:37:46.686 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_80 | Таблица main записана в BQ
+2022-11-14 00:37:46.846 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:37:46.846 | SUCCESS  | __main__:main_load:72 - c_80 | Обработка клиента завершилась
+2022-11-14 00:37:47.684 | SUCCESS  | __main__:create_bq_tables_if_needed:535 - c_81 | Все таблицы созданы в BQ
+2022-11-14 00:37:47.684 | INFO     | __main__:main_load:40 - c_81 | Обработка началась
+2022-11-14 00:37:48.453 | INFO     | __main__:clients_first_load:952 - c_81 | Сценарий | Первичная выгрузка: False
+2022-11-14 00:37:48.455 | INFO     | __main__:check_if_tables_must_be_updated:724 - c_81 | Сценарий | Необходима выгрузка реализации из WB: False
+2022-11-14 00:37:48.455 | INFO     | __main__:check_if_tables_must_be_updated:731 - c_81 | Сценарий | Необходима выгрузка склада из WB: True
+2022-11-14 00:37:48.455 | INFO     | __main__:get_actual_part_start_date:968 - c_81 | Начинаем выгрузку с даты: 2022-10-01 00:00:00
+2022-11-14 00:37:52.047 | INFO     | __main__:load_report_from_bq:428 - c_81 | Получение таблицы report из BQ | Выполнено запросов: 1 из 1
+2022-11-14 00:37:52.152 | SUCCESS  | __main__:load_report_from_bq:430 - c_81 | Таблица report получена из BQ
+2022-11-14 00:37:52.154 | INFO     | __main__:load_from_wb:455 - c_81 | Началась загрузка таблицы stocks из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:37:52.823 | SUCCESS  | __main__:load_from_wb:481 - c_81 | Загружена таблица stocks из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:37:52.825 | INFO     | __main__:delete_actual_part_from_bq:514 - c_81 | Началось удаление строк из таблицы stocks | Выполнено запросов: 0 из 1
+2022-11-14 00:37:55.582 | INFO     | __main__:delete_actual_part_from_bq:522 - c_81 | Удаление строк из таблицы stocks | Выполнено запросов: 1 из 1
+2022-11-14 00:37:55.582 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_81 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_81_stocks по id, которые будут заменены новыми данными
+2022-11-14 00:37:59.699 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_81 | Таблица stocks записана в BQ
+2022-11-14 00:37:59.853 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:37:59.854 | INFO     | __main__:load_from_wb:455 - c_81 | Началась загрузка таблицы orders из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:38:01.082 | SUCCESS  | __main__:load_from_wb:481 - c_81 | Загружена таблица orders из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:38:04.138 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_81 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_81_orders начиная с 2022-10-01 00:00:00
+2022-11-14 00:38:07.536 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_81 | Таблица orders записана в BQ
+2022-11-14 00:38:07.697 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:38:07.706 | INFO     | __main__:load_from_wb:455 - c_81 | Началась загрузка таблицы sales из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:38:08.946 | SUCCESS  | __main__:load_from_wb:481 - c_81 | Загружена таблица sales из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:38:11.214 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_81 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_81_sales начиная с 2022-10-01 00:00:00
+2022-11-14 00:38:14.403 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_81 | Таблица sales записана в BQ
+2022-11-14 00:38:14.566 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:38:14.566 | INFO     | __main__:make_main_table:184 - c_81 | Началось формирование таблицы main
+2022-11-14 00:38:14.581 | DEBUG    | __main__:make_main_table:198 - MAIN LENGTH BEGINNING: 763
+2022-11-14 00:38:14.812 | DEBUG    | __main__:make_main_table:377 - MAIN LENGTH ENGING: 763
+2022-11-14 00:38:14.812 | SUCCESS  | __main__:make_main_table:381 - c_81 | Таблица main сформирована
+2022-11-14 00:38:14.813 | INFO     | __main__:delete_actual_part_from_bq:514 - c_81 | Началось удаление строк из таблицы main | Выполнено запросов: 0 из 1
+2022-11-14 00:38:17.263 | INFO     | __main__:delete_actual_part_from_bq:522 - c_81 | Удаление строк из таблицы main | Выполнено запросов: 1 из 1
+2022-11-14 00:38:17.264 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_81 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_81_main по id, которые будут заменены новыми данными
+2022-11-14 00:38:20.973 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_81 | Таблица main записана в BQ
+2022-11-14 00:38:21.116 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:38:21.118 | SUCCESS  | __main__:main_load:72 - c_81 | Обработка клиента завершилась
+2022-11-14 00:38:21.901 | SUCCESS  | __main__:create_bq_tables_if_needed:535 - c_82 | Все таблицы созданы в BQ
+2022-11-14 00:38:21.901 | INFO     | __main__:main_load:40 - c_82 | Обработка началась
+2022-11-14 00:38:22.739 | INFO     | __main__:clients_first_load:952 - c_82 | Сценарий | Первичная выгрузка: False
+2022-11-14 00:38:22.741 | INFO     | __main__:check_if_tables_must_be_updated:724 - c_82 | Сценарий | Необходима выгрузка реализации из WB: False
+2022-11-14 00:38:22.741 | INFO     | __main__:check_if_tables_must_be_updated:731 - c_82 | Сценарий | Необходима выгрузка склада из WB: True
+2022-11-14 00:38:22.742 | INFO     | __main__:get_actual_part_start_date:968 - c_82 | Начинаем выгрузку с даты: 2022-10-01 00:00:00
+2022-11-14 00:38:26.049 | INFO     | __main__:load_report_from_bq:428 - c_82 | Получение таблицы report из BQ | Выполнено запросов: 1 из 1
+2022-11-14 00:38:26.163 | SUCCESS  | __main__:load_report_from_bq:430 - c_82 | Таблица report получена из BQ
+2022-11-14 00:38:26.164 | INFO     | __main__:load_from_wb:455 - c_82 | Началась загрузка таблицы stocks из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:38:27.122 | SUCCESS  | __main__:load_from_wb:481 - c_82 | Загружена таблица stocks из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:38:27.126 | INFO     | __main__:delete_actual_part_from_bq:514 - c_82 | Началось удаление строк из таблицы stocks | Выполнено запросов: 0 из 1
+2022-11-14 00:38:29.331 | INFO     | __main__:delete_actual_part_from_bq:522 - c_82 | Удаление строк из таблицы stocks | Выполнено запросов: 1 из 1
+2022-11-14 00:38:29.332 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_82 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_82_stocks по id, которые будут заменены новыми данными
+2022-11-14 00:38:35.516 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_82 | Таблица stocks записана в BQ
+2022-11-14 00:38:35.700 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:38:35.701 | INFO     | __main__:load_from_wb:455 - c_82 | Началась загрузка таблицы orders из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:38:37.031 | SUCCESS  | __main__:load_from_wb:481 - c_82 | Загружена таблица orders из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:38:39.204 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_82 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_82_orders начиная с 2022-10-01 00:00:00
+2022-11-14 00:38:44.052 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_82 | Таблица orders записана в BQ
+2022-11-14 00:38:44.218 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:38:44.219 | INFO     | __main__:load_from_wb:455 - c_82 | Началась загрузка таблицы sales из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:38:45.678 | SUCCESS  | __main__:load_from_wb:481 - c_82 | Загружена таблица sales из API WB начиная с 2022-10-01 00:00:00Z
+2022-11-14 00:38:48.142 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_82 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_82_sales начиная с 2022-10-01 00:00:00
+2022-11-14 00:38:54.262 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_82 | Таблица sales записана в BQ
+2022-11-14 00:38:54.473 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:38:54.474 | INFO     | __main__:make_main_table:184 - c_82 | Началось формирование таблицы main
+2022-11-14 00:38:54.495 | DEBUG    | __main__:make_main_table:198 - MAIN LENGTH BEGINNING: 1018
+2022-11-14 00:38:54.714 | DEBUG    | __main__:make_main_table:377 - MAIN LENGTH ENGING: 1018
+2022-11-14 00:38:54.714 | SUCCESS  | __main__:make_main_table:381 - c_82 | Таблица main сформирована
+2022-11-14 00:38:54.715 | INFO     | __main__:delete_actual_part_from_bq:514 - c_82 | Началось удаление строк из таблицы main | Выполнено запросов: 0 из 1
+2022-11-14 00:38:57.219 | INFO     | __main__:delete_actual_part_from_bq:522 - c_82 | Удаление строк из таблицы main | Выполнено запросов: 1 из 1
+2022-11-14 00:38:57.220 | SUCCESS  | __main__:delete_actual_part_from_bq:524 - c_82 | Удалены записи из таблицы focus-invention-343210.METRIX_v4.c_82_main по id, которые будут заменены новыми данными
+2022-11-14 00:39:00.344 | SUCCESS  | __main__:load_dataframe_to_bq:492 - c_82 | Таблица main записана в BQ
+2022-11-14 00:39:00.486 | SUCCESS  | __main__:fix_result:125 - В таблицу клиентов записан результат выгрузки
+2022-11-14 00:39:00.486 | SUCCESS  | __main__:main_load:72 - c_82 | Обработка клиента завершилась
